@@ -48,7 +48,7 @@ ROS2에서 노드를 시행할 때는 ros2 run을 사용합니다. ROS1에서 ro
 
 실행하면 파란 배경화면에 거북이가 나타난다.
 
-   .. image:: _images/turtlesim_rqt/start.png
+   .. image:: /_images/turtlesim_rqt/start.png
 
 |
 
@@ -120,13 +120,13 @@ rqt  사용
 
 주의: 만약 Services가 보이지 않는 다면 rqt를 종료하고 `rqt --force-discover`로 rqt를 실행해 보시기 바랍니다.
 
-   .. image:: _images/turtlesim_rqt/rqt_open.png
+   .. image:: /_images/turtlesim_rqt/rqt_open.png
 
 |
 
 call 버튼 옆에 있는 내림 상자를 클릭하여 /spawn을 선택합니다.
 
-   .. image:: _images/turtlesim_rqt/rqt_spawn.png
+   .. image:: /_images/turtlesim_rqt/rqt_spawn.png
 
 |
 
@@ -138,7 +138,7 @@ spawn서비스 사용해보기
 name 옆에 expression 열을 더블클릭하면 변수를 바꿀 수 있습니다.
 그리고 이녀석을 (1,1) 지점에 소환하기위해 x, y값도 1.0, 1.0로 바꿔주도록 하겠습니다.
 
-   .. image:: _images/turtlesim_rqt/rqt_spawn_call.png
+   .. image:: /_images/turtlesim_rqt/rqt_spawn_call.png
 
 |
 
@@ -146,7 +146,7 @@ name 옆에 expression 열을 더블클릭하면 변수를 바꿀 수 있습니�
 
 거북이를 소환하기 위해 call 버튼을 클릭합니다.
 
-    .. image:: _images/turtlesim_rqt/rqt_spawn_call_result.png
+    .. image:: /_images/turtlesim_rqt/rqt_spawn_call_result.png
 
 |
 
@@ -159,7 +159,7 @@ set_pen서비스 사용하기
 
 이제 call버튼을 누르고 teleop_key노드가 실행된 터미널을 클릭해 활성화 한 다음 방향키를 눌러 발자국이 어떻게 바뀌는지 보겠습니다.
 
-    .. image:: _images/turtlesim_rqt/rqt_setpen.png
+    .. image:: /_images/turtlesim_rqt/rqt_setpen.png
 
 |
 
@@ -179,7 +179,7 @@ Remapping
 
 를 실행한 후 방향키를 이용해 yongyong을 움직입니다.
 
-    .. image:: _images/turtlesim_rqt/remapping.png
+    .. image:: /_images/turtlesim_rqt/remapping.png
 
 |
 
