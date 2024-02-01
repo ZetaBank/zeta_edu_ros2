@@ -57,16 +57,12 @@ In Education Provided by ZetaBank:
     :caption: ROS 2 Installation
     :hidden:
 
-    courses/course_1/1.install_ros2_humble
-    courses/line
-
-
+    courses/course_1/1.install_ros2_humble/0.index
 
 
 .. toctree:: 
     :caption: ROS 2 Tutorial
     :hidden:
     
-    courses/course_2/1.tutorial_ros2/0.index
     courses/course_2/1.tutorial_ros2/1.setting
     courses/course_2/1.tutorial_ros2/2.turtlesim_rqt
