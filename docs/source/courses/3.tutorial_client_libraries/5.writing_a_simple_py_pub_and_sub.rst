@@ -7,7 +7,7 @@
 ----------
 
 :doc:`Nodes </courses/2.tutorial_cli_ros2/3.node>` 는 ROS 그래프를 통해 통신하는 실행 가능한 프로세스입니다.
-이 튜토리얼에서는 노드들이 :doc:`topic </courses/2.tutorial_cli_ros2/4.topic>`을 통해 서로에게 문자열 메시지 형식의 정보를 전달할 것입니다.
+이 튜토리얼에서는 노드들이 :doc:`topic </courses/2.tutorial_cli_ros2/4.topic>` 을 통해 서로에게 문자열 메시지 형식의 정보를 전달할 것입니다.
 여기서 사용되는 예제는 간단한 "talker" 및 "listener" 시스템입니다. 한 노드는 데이터를 게시하고, 다른 노드는 해당 주제를 구독하여 해당 데이터를 수신합니다.
 
 
@@ -130,7 +130,7 @@ Python에 대한 기본적인 이해는 권장되지만 완전히 필수는 아�
 다음은 클래스의 생성자 정의입니다.
 ``super().__init__`` 은 ``Node`` 클래스의 생성자를 호출하고 노드 이름을 지정합니다. 이 경우 ``minimal_publisher`` 입니다.
 
-``create_publisher`` 는 노드가 ``topic`` 이라는 이름의 주제에서 메시지 형식이 ``String``인 메시지를 게시한다고 선언하며, ``queue size``가 10임을 나타냅니다.
+``create_publisher`` 는 노드가 ``topic`` 이라는 이름의 주제에서 메시지 형식이 ``String`` 인 메시지를 게시한다고 선언하며, ``queue size`` 가 10임을 나타냅니다.
 대기열 크기는 구독자가 메시지를 충분히 빨리 수신하지 않는 경우 메시지의 대기열 크기를 제한하는 필수 QoS (서비스 품질) 설정입니다.
 
 다음으로, 0.5초마다 실행되는 타이머가 생성됩니다.
@@ -145,7 +145,7 @@ Python에 대한 기본적인 이해는 권장되지만 완전히 필수는 아�
       self.timer = self.create_timer(timer_period, self.timer_callback)
       self.i = 0
 
-``timer_callback``는 카운터 값을 추가한 메시지를 생성하고, ``get_logger().info``를 사용하여 콘솔에 메시지를 게시합니다.
+``timer_callback`` 는 카운터 값을 추가한 메시지를 생성하고, ``get_logger().info`` 를 사용하여 콘솔에 메시지를 게시합니다.
 
 .. code-block:: python
 
@@ -239,7 +239,7 @@ Python에 대한 기본적인 이해는 권장되지만 완전히 필수는 아�
 
 이제 패키지를 빌드하고 로컬 설정 파일을 소스로 지정한 다음 실행할 수 있지만, 작동하는 전체 시스템을 보기 위해 먼저 서브스크라이버 노드를 생성하겠습니다.
 
-3. 서브스크라이버 노드 작성
+3 서브스크라이버 노드 작성
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 다음 노드를 만들려면 ``ros2_ws/src/py_pubsub/py_pubsub`` 로 돌아갑니다.
@@ -358,7 +358,7 @@ Python에 대한 기본적인 이해는 권장되지만 완전히 필수는 아�
 4 빌드 및 실행
 ^^^^^^^^^^^^^^
 
-일반적으로 ROS 2 시스템의 일부로 ``rclpy``와 ``std_msgs`` 패키지가 이미 설치되어 있을 것입니다.
+일반적으로 ROS 2 시스템의 일부로 ``rclpy`` 와 ``std_msgs`` 패키지가 이미 설치되어 있을 것입니다.
 빌드하기 전에 빠진 종속성을 확인하기 위해 워크스페이스 루트(``ros2_ws``)에서 ``rosdep`` 를 실행하는 것이 좋습니다.
 
 .. tabs::
@@ -381,7 +381,7 @@ Python에 대한 기본적인 이해는 권장되지만 완전히 필수는 아�
       colcon build --packages-select py_pubsub
 
 
-새 터미널을 열고, ``ros2_ws``로 이동한 다음 설정 파일을 소스화합니다.
+새 터미널을 열고, ``ros2_ws`` 로 이동한 다음 설정 파일을 소스화합니다.
 
 .. tabs::
 
@@ -437,7 +437,7 @@ Python에 대한 기본적인 이해는 권장되지만 완전히 필수는 아�
 ~~~~~~~~~
 
 다음으로, 서비스/클라이언트 모델을 사용하여 더 간단한 ROS 2 패키지를 만들 예정입니다.
-다시 한번 선택하여 :doc:`C++ </courses/3.tutorial_client_libraries/6.writing_a_simple_cpp_service_and_client>` 또는 :doc:`Python </courses/3.tutorial_client_libraries/7.writing_a_simple_py_service_and_client>`로 작성할 수 있습니다.
+다시 한번 선택하여 :doc:`C++ </courses/3.tutorial_client_libraries/6.writing_a_simple_cpp_service_and_client>` 또는 :doc:`Python </courses/3.tutorial_client_libraries/7.writing_a_simple_py_service_and_client>` 로 작성할 수 있습니다.
 
 관련 콘텐츠
 ~~~~~~~~~~~~~~

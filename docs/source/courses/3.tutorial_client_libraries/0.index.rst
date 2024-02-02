@@ -11,3 +11,5 @@ Tutorial Client Libraries
    5.writing_a_simple_py_pub_and_sub
    6.writing_a_simple_cpp_service_and_client
    7.writing_a_simple_py_service_and_client
+   8.using_parameters_cpp
+   9.using_parameters_py

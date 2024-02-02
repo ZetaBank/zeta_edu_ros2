@@ -212,7 +212,7 @@ Linux 및 macOS에서는 시스템의 셸 시작 스크립트를 찾아서 추�
 ``colcon`` 탭 완성 설정하기
 -----------------------------
 
-``colcon``은 ``colcon-argcomplete`` 패키지가 설치되어 있는 경우 bash 및 bash와 유사한 셸에 대한 `명령 완성 <https://colcon.readthedocs.io/en/released/user/installation.html#enable-completion>`__ 을 지원합니다.
+``colcon`` 은 ``colcon-argcomplete`` 패키지가 설치되어 있는 경우 bash 및 bash와 유사한 셸에 대한 `명령 완성 <https://colcon.readthedocs.io/en/released/user/installation.html#enable-completion>`__ 을 지원합니다.
 
 
 

@@ -114,7 +114,7 @@ ROS 2 Python 및 CMake 패키지는 각각 자체 최소 요구 사항을 갖습
 
 먼저, :doc:`ROS 2 설치 </courses/1.install_ros2_humble/0.index>` 를 소스화하세요.
 
-새 패키지를 위해 :ref:`이전 튜토리얼 </courses/3.tutorial_client_libraries/2.create_workspace>` 에서 생성한 작업 공간인 ``ros2_ws``를 사용합니다.
+새 패키지를 위해 :ref:`이전 튜토리얼 </courses/3.tutorial_client_libraries/2.create_workspace>` 에서 생성한 작업 공간인 ``ros2_ws`` 를 사용합니다.
 
 패키지 생성 명령을 실행하기 전에 ``src`` 폴더에 있는지 확인하세요.
 
@@ -252,7 +252,7 @@ ROS 2에서 새 패키지를 만드는 명령 구문은 다음과 같습니다.
 
 
 
-마지막 튜토리얼에서 ``ros2_ws``에 ``ros_tutorials`` 패키지가 있는 것을 기억하셨을 것입니다.
+마지막 튜토리얼에서 ``ros2_ws`` 에 ``ros_tutorials`` 패키지가 있는 것을 기억하셨을 것입니다.
 ``colcon build`` 를 실행하면 ``turtlesim`` 패키지도 빌드된 것을 볼 수 있을 것입니다.
 작업 공간에 패키지가 몇 개 없을 때는 이러한 상황이 괜찮지만 패키지가 많을 때는 ``colcon build`` 가 오래 걸릴 수 있습니다.
 
@@ -469,4 +469,4 @@ Summary
 ----------
 
 다음으로 패키지에 의미 있는 내용을 추가해보겠습니다.
-간단한 publisher/subscriber 시스템을 시작하며 이를 :doc:`C++ <./Writing-A-Simple-Cpp-Publisher-And-Subscriber>` 또는 :doc:`Python <./Writing-A-Simple-Py-Publisher-And-Subscriber>` 중 하나로 작성할 수 있습니다.
+간단한 publisher/subscriber 시스템을 시작하며 이를 :doc:`C++ </courses/3.tutorial_client_libraries/4.writing_a_simple_cpp_pub_and_sub>` 또는 :doc:`Python </courses/3.tutorial_client_libraries/5.writing_a_simple_py_pub_and_sub>` 중 하나로 작성할 수 있습니다.

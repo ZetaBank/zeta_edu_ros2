@@ -6,7 +6,7 @@
 배경
 ----
 
-:doc:`Node </courses/2.tutorial_cli_ros2/3.node>`가 :doc:`service </courses/2.tutorial_cli_ros2/5.service>`를 사용하여 통신할 때, 데이터를 요청하는 노드를 클라이언트 노드라고 하고 요청에 응답하는 노드를 서비스 노드라고 합니다.
+:doc:`Node </courses/2.tutorial_cli_ros2/3.node>` 가 :doc:`service </courses/2.tutorial_cli_ros2/5.service>` 를 사용하여 통신할 때, 데이터를 요청하는 노드를 클라이언트 노드라고 하고 요청에 응답하는 노드를 서비스 노드라고 합니다.
 요청과 응답의 구조는 ``.srv`` 파일에 의해 결정됩니다.
 
 여기서 사용하는 예제는 간단한 정수 덧셈 시스템입니다. 하나의 노드는 두 정수의 합을 요청하고 다른 노드는 결과를 응답합니다.
@@ -160,7 +160,7 @@
     add_executable(server src/add_two_ints_server.cpp)
     ament_target_dependencies(server rclcpp example_interfaces)
 
-``ros2 run``이 실행 파일을 찾을 수 있도록 파일 끝에 다음 라인을 ``ament_package()`` 바로 앞에 추가하세요.
+``ros2 run`` 이 실행 파일을 찾을 수 있도록 파일 끝에 다음 라인을 ``ament_package()`` 바로 앞에 추가하세요.
 
 .. code-block:: console
 
@@ -359,10 +359,10 @@
 
 지난 몇 가지 튜토리얼에서는 인터페이스를 활용하여 주제와 서비스 간에 데이터를 전달하는 방법을 학습했습니다.
 다음으로, 사용자 정의 파라미터가 포함된 간단한 ROS 2 패키지를 생성하고, 이를 런치 파일에서 설정하는 방법을 배울 것입니다.
-다시 말씀드립니다. 이를 :doc:`C++ <./Using-Parameters-In-A-Class-CPP>` 또는 :doc:`Python <./Using-Parameters-In-A-Class-Python>` 중 어느 언어로 작성할지 선택할 수 있습니다.
+다시 말씀드립니다. 이를 :doc:`C++ <./8.using_parameters_cpp>` 또는 :doc:`Python <./9.using_parameters_py>` 중 어느 언어로 작성할지 선택할 수 있습니다.
 
 
 관련 콘텐츠
 ---------------
 
-* C++로 서비스와 클라이언트를 작성하는 여러 가지 방법이 있습니다. `ros2/examples <https://github.com/ros2/examples/tree/humble/rclcpp/services>`_ 리포지토리의 ``minimal_service``와 ``minimal_client`` 패키지를 확인해보세요.
+* C++로 서비스와 클라이언트를 작성하는 여러 가지 방법이 있습니다. `ros2/examples <https://github.com/ros2/examples/tree/humble/rclcpp/services>`_ 리포지토리의 ``minimal_service`` 와 ``minimal_client`` 패키지를 확인해보세요.
