@@ -478,7 +478,7 @@
 관련 콘텐츠
 ---------------
 
-C++로 퍼블리셔와 서브스크라이버를 작성하는 여러 가지 방법이 있으며, `ros2/examples <https://github.com/ros2/examples/tree/{REPOS_FILE_BRANCH}/rclcpp/topics>`_ 리포지토리에서 ``minimal_publisher`` 및 ``minimal_subscriber`` 패키지를 확인할 수 있습니다.
+C++로 퍼블리셔와 서브스크라이버를 작성하는 여러 가지 방법이 있으며, `ros2/examples <https://github.com/ros2/examples/tree/humble/rclcpp/topics>`_ 리포지토리에서 ``minimal_publisher`` 및 ``minimal_subscriber`` 패키지를 확인할 수 있습니다.
 
 
 
