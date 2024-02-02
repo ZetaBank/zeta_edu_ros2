@@ -11,12 +11,12 @@
 매개변수를 노드 설정으로 생각할 수 있습니다.
 노드는 정수, 부동 소수점, 부울, 문자열 및 목록과 같은 형식으로 매개변수를 저장할 수 있습니다.
 ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
-매개변수에 대한 자세한 내용은 `개념 문서 <https://docs.ros.org/en/humble/Concepts/Basic/About-Parameters.html>`를 참조하십시오.
+매개변수에 대한 자세한 내용은 `개념 문서 <https://docs.ros.org/en/humble/Concepts/Basic/About-Parameters.html>` 를 참조하십시오.
 
 필수 준비물
 -------------
 
-이 튜토리얼은 :doc:`turtlesim 패키지 </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>`를 사용합니다.
+이 튜토리얼은 :doc:`turtlesim 패키지 </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 를 사용합니다.
 
 항상, 새로운 터미널을 열 때마다 ROS 2를 소스로 지정하는 것을 잊지 마세요.
 
@@ -50,7 +50,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
     ros2 param list
 
-노드 네임스페이스인 ``/teleop_turtle``와 ``/turtlesim``이 나열되며, 각 노드의 매개변수가 표시됩니다:
+노드 네임스페이스인 ``/teleop_turtle`` 와 ``/turtlesim`` 이 나열되며, 각 노드의 매개변수가 표시됩니다:
 
 .. code-block:: console
 
@@ -74,9 +74,9 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
 모든 노드는 ``use_sim_time`` 매개변수를 가지고 있으며, 이는 turtlesim에 고유하지 않습니다.
 
-이름을 기반으로 하면, ``/turtlesim``의 매개변수가 RGB 색상 값을 사용하여 turtlesim 창의 배경 색상을 결정하는 것으로 보입니다.
+이름을 기반으로 하면, ``/turtlesim`` 의 매개변수가 RGB 색상 값을 사용하여 turtlesim 창의 배경 색상을 결정하는 것으로 보입니다.
 
-매개변수의 유형을 확인하려면 ``ros2 param get``을 사용할 수 있습니다.
+매개변수의 유형을 확인하려면 ``ros2 param get`` 을 사용할 수 있습니다.
 
 
 3 ros2 param get
@@ -88,7 +88,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
     ros2 param get <node_name> <parameter_name>
 
-지금 ``/turtlesim``의 매개변수 ``background_g``의 현재 값을 알아보겠습니다:
+지금 ``/turtlesim`` 의 매개변수 ``background_g`` 의 현재 값을 알아보겠습니다:
 
 .. code-block:: console
 
@@ -100,9 +100,9 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
     Integer value is: 86
 
-이제 ``background_g``가 정수 값을 보유하고 있음을 알게 되었습니다.
+이제 ``background_g`` 가 정수 값을 보유하고 있음을 알게 되었습니다.
 
-동일한 명령을 ``background_r`` 및 ``background_b``에 대해 실행하면 각각 ``69`` 및 ``255`` 값을 얻게 됩니다.
+동일한 명령을 ``background_r`` 및 ``background_b`` 에 대해 실행하면 각각 ``69`` 및 ``255`` 값을 얻게 됩니다.
 
 4 ros2 param set
 ^^^^^^^^^^^^^^^^
@@ -142,7 +142,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
   ros2 param dump <node_name>
 
 이 명령은 기본 출력 (stdout)에 출력되지만 나중에 저장할 파일로 매개변수 값을 리디렉션할 수도 있습니다.
-``/turtlesim``의 현재 매개변수 구성을 "turtlesim.yaml" 파일에 저장하려면 다음 명령을 입력하십시오:
+``/turtlesim`` 의 현재 매개변수 구성을 "turtlesim.yaml" 파일에 저장하려면 다음 명령을 입력하십시오:
 
 .. code-block:: console
 
@@ -178,7 +178,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
   ros2 param load <node_name> <parameter_file>
 
-``ros2 param dump``로 생성된 "turtlesim.yaml" 파일을 ``/turtlesim`` 노드의 매개변수에 로드하려면 다음 명령을 입력하십시오:
+``ros2 param dump`` 로 생성된 "turtlesim.yaml" 파일을 ``/turtlesim`` 노드의 매개변수에 로드하려면 다음 명령을 입력하십시오:
 
 .. code-block:: console
 
@@ -199,7 +199,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
 .. note::
 
-  읽기 전용 매개변수는 시작할 때만 수정할 수 있으며 그 이후에는 수정할 수 없으므로 "qos_overrides" 매개변수에 대한 일부 경고가 있습니다.
+  읽기 전용 매개변수는 시작할 때만 수정할 수 있으며 그 이후에는 수정할 수 없으므로 ``qos_overrides`` 매개변수에 대한 일부 경고가 있습니다.
 
 7 노드 시작 시 매개변수 파일 로드
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,7 +210,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
   ros2 run <package_name> <executable_name> --ros-args --params-file <file_name>
 
-이는 항상 turtlesim을 시작할 때 사용하는 명령과 동일하지만 추가된 플래그 ``--ros-args``와 ``--params-file``이 있으며 그 뒤에 로드하려는 파일이 따릅니다.
+이는 항상 turtlesim을 시작할 때 사용하는 명령과 동일하지만 추가된 플래그 ``--ros-args`` 와 ``--params-file`` 이 있으며 그 뒤에 로드하려는 파일이 따릅니다.
 
 실행 중인 turtlesim 노드를 중지하고 다음 명령을 사용하여 저장된 매개변수로 다시로드해 보십시오.
 
@@ -228,10 +228,10 @@ turtlesim 창은 평소처럼 나타나지만 이전에 설정한 보라색 배�
 -------
 
 노드는 기본 구성 값을 정의하기 위해 매개변수를 가지고 있습니다.
-매개변수 값을 명령 줄에서 ``get`` 및 ``set``할 수 있습니다.
+매개변수 값을 명령 줄에서 ``get`` 및 ``set`` 할 수 있습니다.
 매개변수 설정을 파일에 저장하여 나중에 다시로드할 수도 있습니다.
 
 다음 단계
 ----------
 
-ROS 2 통신 방법으로 돌아가서 다음 튜토리얼에서는 :doc:`actions </courses/2.tutorial_cli_ros2/7.action>`에 대해 알아보겠습니다.
+ROS 2 통신 방법으로 돌아가서 다음 튜토리얼에서는 :doc:`actions </courses/2.tutorial_cli_ros2/7.action>` 에 대해 알아보겠습니다.

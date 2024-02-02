@@ -69,7 +69,7 @@ In Education Provided by ZetaBank:
     courses/2.tutorial_cli_ros2/3.node
     courses/2.tutorial_cli_ros2/4.topic
     courses/2.tutorial_cli_ros2/5.service
-    courses/2.tutorial_cli_ros2/6.parameter
+    courses/2.tutorial_cli_ros2/6.parameters
     courses/2.tutorial_cli_ros2/7.action
     courses/2.tutorial_cli_ros2/8.rqt_console
     courses/2.tutorial_cli_ros2/9.launching_node
