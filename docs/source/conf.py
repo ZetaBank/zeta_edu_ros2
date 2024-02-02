@@ -24,7 +24,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.autosectionlabel',
     'sphinxcontrib.images',
-    'sphinx_code_tabs',
+    'sphinx_tabs.tabs',
     #'sphinxcontrib.youtube',
 ]
 
