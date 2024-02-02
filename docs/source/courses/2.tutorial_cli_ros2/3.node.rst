@@ -39,19 +39,19 @@ ROS 2에서는 단일 실행 파일(C++ 프로그램, Python 프로그램 등)�
 
 ``ros2 run`` 명령어는 패키지에서 실행 파일을 실행합니다.
 
-.. code-block:: console
+.. code-block:: bash
 
     ros2 run <package_name> <executable_name>
 
 turtlesim을 실행하려면, 새 터미널을 열고 다음 명령어를 입력하세요:
 
-.. code-block:: console
+.. code-block:: bash
 
     ros2 run turtlesim turtlesim_node
 
-turtlesim 창이 열립니다, :doc:`이전 튜토리얼 </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>`에서 보았던 것처럼.
+turtlesim 창이 열립니다, :doc:`이전 튜토리얼 </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 에서 보았던 것처럼.
 
-여기서, 패키지 이름은 ``turtlesim``이고 실행 파일 이름은 ``turtlesim_node``입니다.
+여기서, 패키지 이름은 ``turtlesim`` 이고 실행 파일 이름은 ``turtlesim_node`` 입니다.
 
 아직 노드 이름은 모릅니다.
 ``ros2 node list``를 사용하여 노드 이름을 찾을 수 있습니다.
@@ -64,19 +64,19 @@ turtlesim 창이 열립니다, :doc:`이전 튜토리얼 </courses/2.tutorial_cl
 
 turtlesim이 다른 하나에서 여전히 실행 중인 동안 새 터미널을 열고 다음 명령어를 입력하세요:
 
-.. code-block:: console
+.. code-block:: bash
 
     ros2 node list
 
 터미널은 노드 이름을 반환할 것입니다:
 
-.. code-block:: console
+.. code-block:: bash
 
   /turtlesim
 
 다른 새 터미널을 열고 다음 명령어로 teleop 노드를 시작하세요:
 
-.. code-block:: console
+.. code-block:: bash
 
     ros2 run turtlesim turtle_teleop_key
 
@@ -85,7 +85,7 @@ turtlesim이 다른 하나에서 여전히 실행 중인 동안 새 터미널을
 ``ros2 node list``를 실행한 터미널로 돌아가 다시 실행하세요.
 이제 두 개의 활성 노드 이름을 볼 수 있습니다:
 
-.. code-block:: console
+.. code-block:: bash
 
   /turtlesim
   /teleop_turtle
@@ -93,20 +93,20 @@ turtlesim이 다른 하나에서 여전히 실행 중인 동안 새 터미널을
 2.1 리매핑
 ~~~~~~~~~~
 
-`리매핑 <https://design.ros2.org/articles/ros_command_line_arguments.html#name-remapping-rules>`__은 노드 이름, 토픽 이름, 서비스 이름 등과 같은 기본 노드 속성을 사용자 정의 값으로 재할당할 수 있게 해줍니다.
+`리매핑 <https://design.ros2.org/articles/ros_command_line_arguments.html#name-remapping-rules>`__ 은 노드 이름, 토픽 이름, 서비스 이름 등과 같은 기본 노드 속성을 사용자 정의 값으로 재할당할 수 있게 해줍니다.
 마지막 튜토리얼에서 ``turtle_teleop_key``에 리매핑을 사용하여 cmd_vel 토픽을 변경하고 **turtle2**를 대상으로 했습니다.
 
 이제, ``/turtlesim`` 노드의 이름을 재할당해봅시다.
 새 터미널에서 다음 명령어를 실행하세요:
 
-.. code-block:: console
+.. code-block:: bash
 
   ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
 
 turtlesim을 다시 호출하므로, 또 다른 turtlesim 창이 열릴 것입니다.
 하지만, 이제 ``ros2 node list``를 다시 실행한 터미널로 돌아가서 다시 실행하면, 세 개의 노드 이름을 볼 수 있습니다:
 
-.. code-block:: console
+.. code-block:: bash
 
     /my_turtle
     /turtlesim
@@ -117,20 +117,20 @@ turtlesim을 다시 호출하므로, 또 다른 turtlesim 창이 열릴 것입�
 
 이제 노드 이름을 알게 되었으니, 다음과 같이 더 많은 정보를 접근할 수 있습니다:
 
-.. code-block:: console
+.. code-block:: bash
 
     ros2 node info <node_name>
 
 최신 노드인 ``my_turtle``을 검사하려면, 다음 명령어를 실행하세요:
 
-.. code-block:: console
+.. code-block:: bash
 
     ros2 node info /my_turtle
 
 ``ros2 node info``는 해당 노드와 상호 작용하는 구독자, 발행자, 서비스, 액션 즉, ROS 그래프 연결을 반환합니다.
 출력은 다음과 같아야 합니다:
 
-.. code-block:: console
+.. code-block:: bash
 
   /my_turtle
     Subscribers:
@@ -178,5 +178,5 @@ turtlesim을 다시 호출하므로, 또 다른 turtlesim 창이 열릴 것입�
 다음 단계
 ---------
 
-이제 ROS 2에서 노드를 이해했으므로, :doc:`토픽 튜토리얼 </courses/2.tutorial_cli_ros2/4.topic>`로 넘어갈 수 있습니다.
+이제 ROS 2에서 노드를 이해했으므로, :doc:`토픽 튜토리얼 </courses/2.tutorial_cli_ros2/4.topic>` 로 넘어갈 수 있습니다.
 토픽은 노드를 연결하는 통신 유형 중 하나입니다.
