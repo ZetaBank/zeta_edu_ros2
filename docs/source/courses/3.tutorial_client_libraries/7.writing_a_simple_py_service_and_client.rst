@@ -6,7 +6,7 @@
 배경
 ----------
 
-:doc:`Node </courses/2.tutorial_cli_ros2/3.node>`가 :doc:`service </courses/2.tutorial_cli_ros2/5.service>`를 사용하여 통신할 때, 데이터를 요청하는 노드를 클라이언트 노드라고 하고 요청에 응답하는 노드를 서비스 노드라고 합니다.
+:doc:`Node </courses/2.tutorial_cli_ros2/3.node>` 가 :doc:`service </courses/2.tutorial_cli_ros2/5.service>` 를 사용하여 통신할 때, 데이터를 요청하는 노드를 클라이언트 노드라고 하고 요청에 응답하는 노드를 서비스 노드라고 합니다.
 요청과 응답의 구조는 ``.srv`` 파일에 의해 결정됩니다.
 
 여기서 사용하는 예제는 간단한 정수 덧셈 시스템입니다. 하나의 노드는 두 정수의 합을 요청하고 다른 노드는 결과를 응답합니다.

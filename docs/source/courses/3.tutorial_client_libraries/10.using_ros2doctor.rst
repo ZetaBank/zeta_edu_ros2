@@ -13,10 +13,10 @@ ROS 2 설정이 원하는대로 작동하지 않을 때 ``ros2doctor`` 도구로
 필수 조건
 -------------
 
-``ros2doctor``는 ``ros2cli`` 패키지의 일부입니다.
+``ros2doctor`` 는 ``ros2cli`` 패키지의 일부입니다.
 일반적으로 ``ros2cli`` 를 설치했다면 ``ros2doctor`` 를 사용할 수 있습니다.
 
-이 튜토리얼에서는 몇 가지 예를 보여 주기 위해 :doc:`turtlesim </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>`을 사용합니다.
+이 튜토리얼에서는 몇 가지 예를 보여 주기 위해 :doc:`turtlesim </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 을 사용합니다.
 
 작업
 -----
@@ -54,7 +54,7 @@ ROS 2 설정이 완벽한 상태라면 다음과 유사한 메시지가 표시�
 
     UserWarning: Distribution <distro> is not fully supported or tested. To get more consistent features, download a stable version at https://index.ros.org/doc/ros2/Installation/
 
-만약 ``ros2doctor``에서 시스템에서 경고만 발견하면 ``All <n> checks passed`` 메시지를 받게 됩니다.
+만약 ``ros2doctor`` 에서 시스템에서 경고만 발견하면 ``All <n> checks passed`` 메시지를 받게 됩니다.
 
 대부분의 검사는 오류가 아닌 경고로 분류됩니다.
 ``ros2doctor`` 의 피드백의 중요성은 대부분 사용자인 여러분에게 달렸습니다.
@@ -126,7 +126,7 @@ turtlesim이 여전히 실행 중인 동안 각각 새로운 터미널을 열고
 
 ``ros2doctor`` 는 네트워크, 시스템 등에 대한 경고를 알려줄 것이지만 ``--report`` 인수와 함께 실행하면 이슈를 분석하는 데 도움이 되는 더 자세한 정보를 제공합니다.
 
-네트워크 설정에 대한 경고를 받은 경우 해당 경고를 일으키는 구성의 어떤 부분이 문제인지 정확히 찾고자 할 때 ``--report``를 사용하면 매우 유용합니다.
+네트워크 설정에 대한 경고를 받은 경우 해당 경고를 일으키는 구성의 어떤 부분이 문제인지 정확히 찾고자 할 때 ``--report`` 를 사용하면 매우 유용합니다.
 
 ROS 2에 대한 도움을 얻기 위해 지원 티켓을 열어야 하는 경우 보고서의 관련 부분을 티켓에 복사하여 도움을 받는 사람이 환경을 더 잘 이해하고 더 나은 지원을 제공할 수 있도록 할 수 있습니다.
 
