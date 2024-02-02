@@ -437,7 +437,7 @@ Python에 대한 기본적인 이해는 권장되지만 완전히 필수는 아�
 ~~~~~~~~~
 
 다음으로, 서비스/클라이언트 모델을 사용하여 더 간단한 ROS 2 패키지를 만들 예정입니다.
-다시 한 번, :doc:`C++ <./Writing-A-Simple-Cpp-Service-And-Client>` 또는 :doc:`Python <./Writing-A-Simple-Py-Service-And-Client>` 중 어느 언어로 작성할지 선택할 수 있습니다.
+다시 한번 선택하여 :doc:`C++ </courses/3.tutorial_client_libraries/6.writing_a_simple_cpp_service_and_client>` 또는 :doc:`Python </courses/3.tutorial_client_libraries/7.writing_a_simple_py_service_and_client>`로 작성할 수 있습니다.
 
 관련 콘텐츠
 ~~~~~~~~~~~~~~
