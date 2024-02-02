@@ -1,9 +1,0 @@
-Creating Labels and Buttons
----------------------------
-.. toctree:: 
-
-    1.empty
-    2.label
-    3.button
-    4.button_clicked
-

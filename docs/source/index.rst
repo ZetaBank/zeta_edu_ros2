@@ -57,12 +57,27 @@ In Education Provided by ZetaBank:
     :caption: ROS 2 Installation
     :hidden:
 
-    courses/course_1/1.install_ros2_humble/0.index
+    courses/1.install_ros2_humble/0.index
 
 
 .. toctree:: 
-    :caption: ROS 2 Tutorial
+    :caption: ROS 2 CLI Tutorial
     :hidden:
     
-    courses/course_2/1.tutorial_ros2/1.setting
-    courses/course_2/1.tutorial_ros2/2.turtlesim_rqt
+    courses/2.tutorial_cli_ros2/1.setting
+    courses/2.tutorial_cli_ros2/2.turtlesim_rqt
+    courses/2.tutorial_cli_ros2/3.node
+    courses/2.tutorial_cli_ros2/4.topic
+    courses/2.tutorial_cli_ros2/5.service
+    courses/2.tutorial_cli_ros2/6.parameter
+    courses/2.tutorial_cli_ros2/7.action
+    courses/2.tutorial_cli_ros2/8.rqt_console
+    courses/2.tutorial_cli_ros2/9.launching_node
+    courses/2.tutorial_cli_ros2/10.recording
+
+
+.. toctree:: 
+    :caption: ROS 2 Client libraries Tutorial
+    :hidden:
+    
+    courses/3.tutorial_client_libraries/1.colcon
