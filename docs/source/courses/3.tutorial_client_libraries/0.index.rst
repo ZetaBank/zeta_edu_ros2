@@ -7,3 +7,7 @@ Tutorial Client Libraries
    1.colcon
    2.create_workspace
    3.create_package
+   4.writing_a_simple_cpp_pub_and_sub
+   5.writing_a_simple_py_pub_and_sub
+   6.writing_a_simple_cpp_service_and_client
+   7.writing_a_simple_py_service_and_client
