@@ -4,14 +4,14 @@ tutorial cli ros2
 .. toctree::
    :maxdepth: 1
 
-    courses/2.tutorial_cli_ros2/0.index
-    courses/2.tutorial_cli_ros2/1.setting
-    courses/2.tutorial_cli_ros2/2.turtlesim_rqt
-    courses/2.tutorial_cli_ros2/3.node
-    courses/2.tutorial_cli_ros2/4.topic
-    courses/2.tutorial_cli_ros2/5.service
-    courses/2.tutorial_cli_ros2/6.parameters
-    courses/2.tutorial_cli_ros2/7.action
-    courses/2.tutorial_cli_ros2/8.rqt_console
-    courses/2.tutorial_cli_ros2/9.launching_node
-    courses/2.tutorial_cli_ros2/10.recording
+    0.index
+    1.setting
+    2.turtlesim_rqt
+    3.node
+    4.topic
+    5.service
+    6.parameters
+    7.action
+    8.rqt_console
+    9.launching_node
+    10.recording
