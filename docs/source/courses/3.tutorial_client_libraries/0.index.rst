@@ -13,3 +13,4 @@ Tutorial Client Libraries
    7.writing_a_simple_py_service_and_client
    8.using_parameters_cpp
    9.using_parameters_py
+   10.using_ros2doctor
