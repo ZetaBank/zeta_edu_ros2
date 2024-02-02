@@ -81,7 +81,7 @@ In Education Provided by ZetaBank:
     :caption: ROS 2 Client libraries Tutorial
     :hidden:
     
-    courses/3.tutorial_client_libraries/1.colcon
+    courses/3.tutorial_client_libraries/0.index
 
 .. toctree:: 
     :caption: ROS 2 Intermediate
