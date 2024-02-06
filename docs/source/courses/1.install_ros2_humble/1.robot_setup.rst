@@ -74,7 +74,7 @@ OS가 설치된 SD카드를 로봇의 위를 들어 올려서 라즈베리 파�
 이제 로봇에서 우분투를 사용할 준비가 끝났습니다.
 
 
-1 로봇 ``HotSpot`` 설정하기
+2 로봇 ``HotSpot`` 설정하기
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 이번 과정에선 로봇이 인터넷이 되지 않는 환경에서도 PC와 연결할 수 있게 로봇을 ``HotSpot`` 으로 구성할 것입니다.
@@ -191,10 +191,21 @@ sudo apt install openssh-server
 .. image:: images/wifi_9.png
 
 
+2 로봇 ``openssh-server`` 설정하기
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+후에 PC와의 연결을 위해 ``openssh-server`` 를 설치합니다.
+
+.. code-block:: bash
+   sudo apt update
+   sudo apt install openssh-server
+
 요약
 -------
 
 로봇을 사용하기 위해서 SD 카드에 우분투 OS를 설치하고 로봇의 ``HotSpot`` 을 설정하는 작업을 완료했습니다.
+
+또한 나중에 PC와의 연결을 위해 ``openssh-server`` 을 설치했습니다.
 
 다음 단계
 ----------

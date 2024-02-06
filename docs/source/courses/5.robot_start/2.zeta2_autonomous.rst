@@ -13,7 +13,7 @@ zeta2 autonomous
 전제조건
 --------
 
-:doc:`zeta2_bringup <./zeta2_bringup>` 을 먼저 완료해야 합니다.
+:doc:`zeta2_bringup <./1.zeta2_bringup>` 을 먼저 완료해야 합니다.
 
 
 1 필요한 패키지들 설치

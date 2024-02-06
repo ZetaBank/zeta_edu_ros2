@@ -29,13 +29,15 @@ https://mobaxterm.mobatek.net/download-home-edition.html
 
 둘 중 더 선호하는 버전으로 사용하면 됩니다.
 
-전 ``Portable edition`` 을 사용해보겠습니다.
+전 ``Installer edition`` 을 사용해보겠습니다.
 
-버튼을 눌러 설치하면 보통은 PC의 다운로드 폴더로 저장될 것 입니다. 확인을 해 보면 ``MobaXterm_Portable_v**.*.zip`` 의 형태로 되어 있을 겁니다. 여기서 ** 은 버전의 숫자입니다.
+버튼을 눌러 설치하면 보통은 PC의 다운로드 폴더로 저장될 것 입니다. 확인을 해 보면 ``MobaXterm_Installer_v**.*.zip`` 의 형태로 되어 있을 겁니다. 여기서 ** 은 버전의 숫자입니다.
 
-원하는 폴더로 ``MobaXterm_Portable_v**.*.zip`` 파일을 옮긴 후 압축을 풀어줍니다.
+원하는 폴더로 ``MobaXterm_Installer_v**.*.zip`` 파일을 옮긴 후 압축을 풀어줍니다.
 
-다음으로 실행을 해주면 됩니다.
+압축을 풀고 나온 ``MobaXterm_Installer_v**.*.msi`` 파일을 실행한 후
+
+원하는 경로에 설치 한 후 실행 해주면 됩니다.
 
 실행하면 아래와 같은 새로운 프로그램이 실행될 것입니다.
 

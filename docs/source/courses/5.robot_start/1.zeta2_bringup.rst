@@ -106,7 +106,7 @@ build가 끝나면 빌드된 폴더의 소스를 해주고 실행하면 됩니�
 
 .. code-block:: bash
 
-    ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom
+    ros2 launch zeta2_bringup zeta2_bringup.launch.py
 
 
 조이스틱 조작을 위해선 zeta_joy 런치 파일을 실행합니다.

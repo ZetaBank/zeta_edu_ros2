@@ -42,7 +42,7 @@ ROS2에서 노드를 시행할 때는 ros2 run을 사용합니다. ROS1에서 ro
 
  
 
-`turtlesim`은 실행할 노드가 있는 패키지의 이름을, `turtlesim_node`는 실행할 노드의 이름을 뜻한다.
+`turtlesim` 은 실행할 노드가 있는 패키지의 이름을, `turtlesim_node` 는 실행할 노드의 이름을 뜻한다.
 
 여기서 노드란 가장 작은 단위의 실행 프로그램을 뜻한다.
 
@@ -60,7 +60,7 @@ ROS2에서 노드를 시행할 때는 ros2 run을 사용합니다. ROS1에서 ro
    [INFO] [1706776777.723552185] [turtlesim]: Starting turtlesim with node name /turtlesim
    [INFO] [1706776777.758590105] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
 
-`turtlesim_node`에 대한 정보입니다. 두번째 라인은 거북이가 어디에 소환될지에 대한 정보를 담고 있습니다.
+`turtlesim_node` 에 대한 정보입니다. 두번째 라인은 거북이가 어디에 소환될지에 대한 정보를 담고 있습니다.
 
 
 turtlesim 사용해보기
@@ -118,7 +118,7 @@ rqt  사용
 
 처음 실행하면 빈 화면이 나올 것입니다. 당황하지말고, plugins > Services > Service Caller를 상단 탭에서 선택합니다.
 
-주의: 만약 Services가 보이지 않는 다면 rqt를 종료하고 `rqt --force-discover`로 rqt를 실행해 보시기 바랍니다.
+주의: 만약 Services가 보이지 않는 다면 rqt를 종료하고 `rqt --force-discover` 로 rqt를 실행해 보시기 바랍니다.
 
    .. image:: /_images/turtlesim_rqt/rqt_open.png
 

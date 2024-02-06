@@ -54,6 +54,12 @@ In Education Provided by ZetaBank:
    :width: 250
 
 .. toctree::
+    :caption: Zeta2 Robot Hardware
+    :hidden:
+
+    courses/0.robot_hardware/0.index
+
+.. toctree::
     :caption: ROS 2 Installation
     :hidden:
 
