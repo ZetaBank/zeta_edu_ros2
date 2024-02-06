@@ -65,17 +65,6 @@ In Education Provided by ZetaBank:
     :hidden:
     
     courses/2.tutorial_cli_ros2/0.index
-    .. courses/2.tutorial_cli_ros2/1.setting
-    .. courses/2.tutorial_cli_ros2/2.turtlesim_rqt
-    .. courses/2.tutorial_cli_ros2/3.node
-    .. courses/2.tutorial_cli_ros2/4.topic
-    .. courses/2.tutorial_cli_ros2/5.service
-    .. courses/2.tutorial_cli_ros2/6.parameters
-    .. courses/2.tutorial_cli_ros2/7.action
-    .. courses/2.tutorial_cli_ros2/8.rqt_console
-    .. courses/2.tutorial_cli_ros2/9.launching_node
-    .. courses/2.tutorial_cli_ros2/10.recording
-
 
 .. toctree:: 
     :caption: ROS 2 Client libraries Tutorial
@@ -87,4 +76,10 @@ In Education Provided by ZetaBank:
     :caption: ROS 2 Intermediate
     :hidden:
     
-    courses/4.intermediate_ros2/1.rosdep
+    courses/4.intermediate_ros2/0.index
+
+.. toctree:: 
+    :caption: Zeta2 Robot Packages
+    :hidden:
+    
+    courses/5.robot_start/0.index

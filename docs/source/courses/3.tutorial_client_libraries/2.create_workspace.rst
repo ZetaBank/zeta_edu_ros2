@@ -19,7 +19,7 @@ ROS 2를 사용하기 전에 작업하려는 터미널에서 ROS 2 설치 작업
 전제 조건
 -------------
 
-* :doc:`ROS 2 설치 </courses/1.install_ros2_humble/0.index>`
+* :doc:`ROS 2 설치 </courses/1.install_ros2_humble/3.install_ros2>`
 * :doc:`colcon 설치 </courses/3.tutorial_client_libraries/1.colcon>`
 * `git 설치 <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`__
 * :doc:`turtlesim 설치 </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>`
@@ -42,7 +42,7 @@ ROS 2를 어떻게 설치했는지(원본 빌드 또는 이진 파일에서) 및
 
     source /opt/ros/humble/setup.bash
 
-만약 이 명령어가 작동하지 않는다면, 사용한 설치 가이드의 :doc:`설치 가이드 </courses/1.install_ros2_humble/0.index>` 를 참고하세요.
+만약 이 명령어가 작동하지 않는다면, 사용한 설치 가이드의 :doc:`설치 가이드 </courses/1.install_ros2_humble/3.install_ros2>` 를 참고하세요.
 
 2. 새 디렉터리 생성
 ^^^^^^^^^^^^^^^^^^^^^^^^

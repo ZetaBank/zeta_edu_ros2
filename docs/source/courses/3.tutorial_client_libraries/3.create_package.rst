@@ -112,7 +112,7 @@ ROS 2 Python 및 CMake 패키지는 각각 자체 최소 요구 사항을 갖습
 1 패키지 만들기
 ^^^^^^^^^^^^^^^^^^
 
-먼저, :doc:`ROS 2 설치 </courses/1.install_ros2_humble/0.index>` 를 소스화하세요.
+먼저, :doc:`ROS 2 설치 </courses/1.install_ros2_humble/3.install_ros2>` 를 소스화하세요.
 
 새 패키지를 위해 :ref:`이전 튜토리얼 </courses/3.tutorial_client_libraries/2.create_workspace>` 에서 생성한 작업 공간인 ``ros2_ws`` 를 사용합니다.
 

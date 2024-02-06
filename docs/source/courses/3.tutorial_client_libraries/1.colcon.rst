@@ -31,9 +31,9 @@ ROS 2 설치
 
 샘플을 빌드하려면 ROS 2를 설치해야 합니다.
 
-:doc:`설치 지침 </courses/1.install_ros2_humble/0.index>` 을 따르세요.
+:doc:`설치 지침 </courses/1.install_ros2_humble/3.install_ros2>` 을 따르세요.
 
-.. attention:: Debian 패키지에서 설치하는 경우, 이 튜토리얼은 :doc:`데스크톱 설치 </courses/1.install_ros2_humble/0.index>` 를 필요로 합니다.
+.. attention:: Debian 패키지에서 설치하는 경우, 이 튜토리얼은 :doc:`데스크톱 설치 </courses/1.install_ros2_humble/3.install_ros2>` 를 필요로 합니다.
 
 기초사항
 ---------
@@ -103,7 +103,7 @@ colcon은 외부 빌드를 지원합니다.
 ^^^^^^^^^^
 
 예제 패키지에 대한 필수 빌드 종속성을 제공하기 위해 워크스페이스에 이미 있는 ROS 2 설치의 환경을 소스화하는 것이 중요합니다.
-이를 위해 바이너리 설치나 소스 설치에서 제공되는 설정 스크립트를 소스화해야 합니다 (자세한 내용은 :doc:`설치 </courses/1.install_ros2_humble/0.index>` 참조).
+이를 위해 바이너리 설치나 소스 설치에서 제공되는 설정 스크립트를 소스화해야 합니다 (자세한 내용은 :doc:`설치 </courses/1.install_ros2_humble/3.install_ros2>` 참조).
 이 환경을 **언더레이** 라고 합니다.
 
 워크스페이스인 ``ros2_ws`` 는 기존 ROS 2 설치 위에 있는 **오버레이** 입니다.
