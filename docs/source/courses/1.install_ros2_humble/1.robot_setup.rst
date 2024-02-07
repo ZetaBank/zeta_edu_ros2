@@ -197,6 +197,7 @@ sudo apt install openssh-server
 후에 PC와의 연결을 위해 ``openssh-server`` 를 설치합니다.
 
 .. code-block:: bash
+   
    sudo apt update
    sudo apt install openssh-server
 
