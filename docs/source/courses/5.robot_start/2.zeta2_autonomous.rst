@@ -109,10 +109,13 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 .. note::
 
    실패가 나오더라도 당황하지 않고 다시 실행하면 저장 된다.
+
    .. code-block:: bash
    
       # 1차 시도
+      
       ros2 run nav2_map_server map_saver_cli -f office
+
       [INFO] [1707357911.897409677] [map_saver]:
             map_saver lifecycle node launched.
             Waiting on external lifecycle transitions to activate
@@ -127,7 +130,9 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
       [ros2run]: Process exited with failure 1
 
       # 2차 시도
+
       ros2 run nav2_map_server map_saver_cli -f office
+
       [INFO] [1707357917.178735050] [map_saver]:
             map_saver lifecycle node launched.
             Waiting on external lifecycle transitions to activate
