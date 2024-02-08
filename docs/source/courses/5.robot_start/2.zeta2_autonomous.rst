@@ -266,8 +266,46 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 
 만들었던 맵을 zeta2_navigation/maps 폴더에 잘 넣는다. (맵은 ``pgm`` 파일과 ``yaml`` 파일 두개 다 필요하다.)
 
+넣을 땐 구분하기 좋게 폴더 명을 만들어서 넣는게 좋다.
 
-맵을 다 넣었다면 zeta2_navigation 패키지만 빌드를 해준다.
+.. code-block:: bash
+
+   zeta@zeta-desktop:~$ ls
+   Desktop    Downloads  office.pgm   Pictures  snap       Videos
+   Documents  Music      office.yaml  Public    Templates  zeta_ws
+
+지금 경우엔 office라는 맵을 만들었었다.
+
+.. code-block:: bash
+
+   cd ~/zeta_ws/src/zeta2_edu_autonomous/zeta2_navigation/maps/
+   mkdir office
+
+   cd ~
+
+   cp office* ~/zeta_ws/src/zeta2_edu_autonomous/zeta2_navigation/maps/office
+
+이런 명령어를 통해 복사 할 수 있다.
+
+
+맵을 다 넣었다면 zeta2_navigation 패키지의 launch 파일을 수정해줘야 한다. 지금은 기본으로 설정된 맵으로 지정 되어 있을 것이다.
+
+.. code-block:: bash
+
+   cd ~/zeta_ws/src/zeta2_edu_autonomous/zeta2_navigation/launch
+
+   gedit zeta2_navigation.launch.py
+
+   # 중간 쯤에 이렇게 되어 있는 곳이 있을 것이다. office 자리엔 본인이 생성한 폴더 이름 office.yaml 자리엔 본인의 yaml 파일 이름을 넣으면 된다.
+   ----------
+       map_dir = LaunchConfiguration(
+        'map',
+        default=os.path.join(
+            zeta2_nav2_dir,
+            'maps',
+            'office',
+            'office.yaml'))
+   ----------
 
 .. code-block:: bash
    
@@ -275,7 +313,9 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
    colcon build --packages-select zeta2_navigation
 
 
-zeta2_navigation 패키지의 zeta2_navigation 런치 파일을 실행한다.
+``zeta2_navigation`` 을 실행 할 땐 ``zeta2_bringup 이 실행 되고 있어야 한다.
+
+``zeta2_navigation`` 패키지의 ``zeta2_navigation`` 런치 파일을 실행한다.
 
 .. code-block:: bash
 
