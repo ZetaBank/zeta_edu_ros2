@@ -23,6 +23,8 @@ zeta2 autonomous
 
 .. code-block:: bash
 
+   sudo apt update
+
    # slam_toolbox
    sudo apt install ros-humble-slam-toolbox -y
 
@@ -45,9 +47,10 @@ zeta2 autonomous
    cd ~/zeta_ws/src
    git clone https://github.com/zetabank-devteam/zeta2_edu_autonomous.git
 
+.. code-block:: bash
+
    cd ~/zeta_ws
    colcon build --packages-select zeta2_navigation zeta2_slam_toolbox zeta2_cartographer
-
    source ~/zeta_ws/install/setup.bash
 
 
@@ -147,6 +150,69 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 
 4 navigation2 실행
 ^^^^^^^^^^^^^^^^^^
+
+이 부분은 이제 로봇을 자율주행 하는 부분 입니다. 이 로봇은 ``DWBLocalPlanner`` 를 사용하여 주행합니다.
+
+앞의 ``slam_toolbox`` 나 ``cartographer`` 과정을 완료 했으면 지도를 만들 수 있었을 것입니다.
+
+그 지도를 사용하여 자율주행을 해볼 것 입니다.
+
+.. note::
+
+   **2.1 로봇 별 설정**
+
+   로봇의 크기에 따라서 설정할 것들이 생깁니다.
+
+   .. image:: images/robots_image.jpg
+
+   왼쪽의 작은 로봇이 있고, 오른쪽의 조금 더 큰 로봇이 있습니다.
+
+   지금 이 패키지는 조금 더 큰 로봇을 기준으로 완성 된 것입니다.
+
+   그렇기에 작은 로봇을 사용할 경우엔 수정사항이 생깁니다.
+
+   큰 로봇일 경우엔 스킵해도 됩니다.
+
+   **2.1.1 zeta_dwb.yaml 수정**
+
+   자율주행을 할 때 이 ``zeta_dwb.yaml`` 파일을 읽어서 파라미터들을 불러옵니다.
+
+   이 값들 중에서 ``robot_radius`` 라는 값들이 있는데 이는 로봇의 반지름을 나타냅니다.
+
+   실제 로봇의 모양은 원형이 아니지만 원이라 가정하고 로봇의 반경을 설정해 주는 부분입니다.
+
+   좀 더 구체적인 형태로 나타내고 싶을 땐 ``footprint`` 를 사용할 수 있습니다.
+
+   하지만 모양이 구체적일 수록 계산량이 늘어나서 지금 이 환경에선 추천하지 않습니다.
+
+   자세한 정보는  `costmap <https://navigation.ros.org/configuration/packages/configuring-costmaps.html>`__ 을 참고 하시기 바랍니다.
+
+   작은 로봇의 경우는 가장 끝에서 끝의 경우에 약 28cm 정도이기 때문에 ``0.16 -> 0.14`` 로 수정해 주시면 됩니다.
+
+   .. code-block:: bash
+
+      cd ~/zeta_ws/src/zeta2_edu_autonomous/zeta2_navigation/params
+
+      gedit zeta_dwb.yaml
+
+      -------
+      .
+      .
+      .
+      # 약 185번째 줄
+      robot_radius: 0.16 -> robot_radius: 0.14
+      .
+      .
+      .
+      # 약 211번째 줄
+      robot_radius: 0.16 -> robot_radius: 0.14
+      -------
+
+   이 두 부분을 수정해 주시면 됩니다.
+
+   기존의 큰 로봇을 사용할 경우엔 생략하셔도 됩니다.
+
+
 
 만들었던 맵을 zeta2_navigation/maps 폴더에 잘 넣는다. (맵은 ``pgm`` 파일과 ``yaml`` 파일 두개 다 필요하다.)
 
