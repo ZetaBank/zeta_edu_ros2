@@ -313,7 +313,7 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
    colcon build --packages-select zeta2_navigation
 
 
-``zeta2_navigation`` 을 실행 할 땐 ``zeta2_bringup 이 실행 되고 있어야 한다.
+``zeta2_navigation`` 을 실행 할 땐 ``zeta2_bringup`` 이 실행 되고 있어야 한다.
 
 ``zeta2_navigation`` 패키지의 ``zeta2_navigation`` 런치 파일을 실행한다.
 
