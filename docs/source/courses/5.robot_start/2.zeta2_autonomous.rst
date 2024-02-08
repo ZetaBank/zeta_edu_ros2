@@ -68,18 +68,22 @@ zeta2 autonomous
 
    ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, making tf, scan
 
-새로운 터미널을 열고 조이스틱 조작을 위해 zeta_joy를 실행한다.
+새로운 터미널을 열고 조이스틱 조작을 위해 zeta_joy를 실행한다. (``zeta_ws`` 를 계속 source 해줘야 합니다.)
 
 .. image:: images/2_slam.png
 
 .. code-block:: bash
 
+   source ~/zeta_ws/install/setup.bash
+
    ros2 launch zeta2_bringup zeta_joy.launch.py
 
-새로운 터미널을 열고 zeta_slam_toolbox를 실행한다.
+새로운 터미널을 열고 zeta_slam_toolbox를 실행한다. (``zeta_ws`` 를 계속 source 해줘야 합니다.)
 
 .. code-block:: bash
    
+   source ~/zeta_ws/install/setup.bash
+
    ros2 launch zeta2_slam_toolbox zeta2_slam_toolbox.launch.py
 
 .. image:: images/3_toolbox.png
@@ -97,9 +101,49 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 
    ## ros2 run nav2_map_server map_saver_cli -f {원하는 지도 이름}
    ## 예시
+   
    ros2 run nav2_map_server map_saver_cli -f slam_toolbox_seongsu
 
 .. image:: images/6_toolbox.png
+
+.. note::
+
+   실패가 나오더라도 당황하지 않고 다시 실행하면 저장 된다.
+   .. code-block:: bash
+   
+      # 1차 시도
+      ros2 run nav2_map_server map_saver_cli -f office
+      [INFO] [1707357911.897409677] [map_saver]:
+            map_saver lifecycle node launched.
+            Waiting on external lifecycle transitions to activate
+            See https://design.ros2.org/articles/node_lifecycle.html for more information.
+      [INFO] [1707357911.897945562] [map_saver]: Creating
+      [INFO] [1707357911.898317319] [map_saver]: Configuring
+      [INFO] [1707357911.912723324] [map_saver]: Saving map from 'map' topic to 'office' file
+      [WARN] [1707357911.913061451] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+      [WARN] [1707357911.913144432] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+      [ERROR] [1707357913.919701158] [map_saver]: Failed to spin map subscription
+      [INFO] [1707357913.925887446] [map_saver]: Destroying
+      [ros2run]: Process exited with failure 1
+
+      # 2차 시도
+      ros2 run nav2_map_server map_saver_cli -f office
+      [INFO] [1707357917.178735050] [map_saver]:
+            map_saver lifecycle node launched.
+            Waiting on external lifecycle transitions to activate
+            See https://design.ros2.org/articles/node_lifecycle.html for more information.
+      [INFO] [1707357917.180127725] [map_saver]: Creating
+      [INFO] [1707357917.181631380] [map_saver]: Configuring
+      [INFO] [1707357917.192101730] [map_saver]: Saving map from 'map' topic to 'office' file
+      [WARN] [1707357917.192336839] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+      [WARN] [1707357917.192414894] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+      [WARN] [map_io]: Image format unspecified. Setting it to: pgm
+      [INFO] [map_io]: Received a 245 X 162 map @ 0.05 m/pix
+      [INFO] [map_io]: Writing map occupancy data to office.pgm
+      [INFO] [map_io]: Writing map metadata to office.yaml
+      [INFO] [map_io]: Map saved
+      [INFO] [1707357917.726928492] [map_saver]: Map saved successfully
+      [INFO] [1707357917.732879393] [map_saver]: Destroying
 
 
 
