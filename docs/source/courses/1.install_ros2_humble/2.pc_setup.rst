@@ -5,8 +5,7 @@ PC 셋업
 
 이 과정에서는 PC에서 로봇에 연결하는 방법을 알려줍니다.
 
-다른 프로그램도 많지만 여기선 `mobaXterm <https://mobaxterm.mobatek.net/>`__ 을 사용합니다. 
-그 이유는 DISPLAY 설정을 따로 하지 않아도 쉽게 로봇의 화면을 볼 수 있기 때문입니다.
+PC에 로봇에 맞는 ubuntu 버전을 설치하고 ros 또한 설치하여 PC에서도 ros를 사용할 수 있게 할 것입니다.
 
 전제조건
 --------
@@ -15,126 +14,140 @@ PC 셋업
 
 2. :doc:`전 작업 <./1.robot_setup>` 이 끝난 zeta2 로봇
 
+3. USB 준비
 
-1 PC에 **mobaXterm** 설치
+1 **Ubuntu** USB 메모리 스틱 만들기
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-https://mobaxterm.mobatek.net/download-home-edition.html
+https://mirror.kakao.com/ubuntu-releases/
 
-위의 링크로 들어가서 **mobaXterm** 을 다운로드 받습니다. ``Portable edition`` 과 ``Installer edition`` 두 가지가 있습니다.
+위의 링크로 들어가서 **Ubuntu** 를 다운로드 받습니다.
 
-``Portable edition`` 은 이동식 버전입니다. PC에 설치해서 사용하는 것이 아닌 그냥 사용할 수 있는 버전입니다.
+이 버전에선 ``22.04`` 를 설치할 것입니다.
 
-``Installer edition`` 은 설치 버전입니다. PC에 설치해서 사용하는 버전입니다.
+desktop 버전으로 다운 받으면 됩니다.
 
-둘 중 더 선호하는 버전으로 사용하면 됩니다.
+다음은 USB에 다운로드 받은 iso 파일을 넣습니다. 넣는 방법은 다양합니다.
 
-전 ``Installer edition`` 을 사용해보겠습니다.
+https://makingrobot.tistory.com/132 이 사이트를 참고할 수도 있습니다.
 
-버튼을 눌러 설치하면 보통은 PC의 다운로드 폴더로 저장될 것 입니다. 확인을 해 보면 ``MobaXterm_Installer_v**.*.zip`` 의 형태로 되어 있을 겁니다. 여기서 ** 은 버전의 숫자입니다.
+https://www.bangseongbeom.com/balena-etcher-intro.html 이 사이트를 참고할 수도 있습니다.
 
-원하는 폴더로 ``MobaXterm_Installer_v**.*.zip`` 파일을 옮긴 후 압축을 풀어줍니다.
-
-압축을 풀고 나온 ``MobaXterm_Installer_v**.*.msi`` 파일을 실행한 후
-
-원하는 경로에 설치 한 후 실행 해주면 됩니다.
-
-실행하면 아래와 같은 새로운 프로그램이 실행될 것입니다.
-
-.. image:: images/mobaXterm_1.png
-
-사진의 경우엔 왼쪽 ``User sessions`` 를 보면 다양한 숫자들이 있을텐데 이것은 다른 로봇들의 ``IP`` 입니다. 이 ``IP`` 를 사용하여 로봇에 ``ssh`` 연결을 한 뒤 로봇의 우분투에 명령을 할 것입니다.
+USB에 ISO 파일을 넣으면 이제 우분투 설치용 USB가 생성된 것입니다.
 
 
-2 PC로 로봇에 연결
-^^^^^^^^^^^^^^^^^^^^^^^^^
+2 PC에 Ubuntu 설치하기
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-전의 과정을 잘 따라 했으면 이제 PC에서 로봇에 연결하는 과정이 남았습니다.
+앞의 과정을 다 하였으면 이제 PC에 Ubuntu를 설치하는 과정이 남았습니다.
 
-로봇에 연결 할 수 있는 IP는 크게 2개가 있을 것 입니다.
+1. USB 메모리 스틱을 PC에 장착하고 전원 버튼을 켭니다. USB 부팅이 가능하도록 CMOS를 설정해야 하기 때문에 부팅과 동시에 F11 기능키를 누릅니다. 아래와 같은 부팅 디바이스 선택 화면이 출력됩니다.
 
-1. 로봇 ``HotSpot`` 의 IP 주소
+.. image:: images/ubuntu_1.png
 
-2. 로봇 ``ehternet`` 의 IP 주소
+.. image:: images/ubuntu_2.png
 
+PC의 메인 보드에 따라서 눌려야 하는 버튼이 다를 수도 있습니다.
 
-처음 작업할 때는 안정성을 위해 로봇 ``ethernet`` 의 IP 주소로 연결하는 것을 추천합니다. 
+자신의 USB 제품을 선택합니다.
 
-**주의사항: ehternet의 IP로 연결할 경우엔 PC와 로봇이 같은 네트워크 상에 있어야 합니다.**
+2. USB 장치가 인식되어 부팅이 시작 됩니다. Try Ubuntu or Install 을 설택한다음 -> Install 을 선택하면 설치가 진행됩니다.
 
-처음 로봇에 LAN 선을 연결하고 ifconfig 명령어로 확인했을 때 우리는 로봇의 ethernet IP 또한 확인할 수 있었습니다.
+.. image:: images/ubuntu_3.png
 
-.. code-block:: bash
+3. 다음 버튼을 눌러줍니다.
 
-   zeta@zeta-desktop:~$ ifconfig
-   eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-         inet 192.168.0.216  netmask 255.255.255.0  broadcast 192.168.0.255
-         inet6 fe80::f71a:f424:9abf:3eb3  prefixlen 64  scopeid 0x20<link>
-         ether e4:5f:01:f8:f6:61  txqueuelen 1000  (Ethernet)
-         RX packets 1016  bytes 317553 (317.5 KB)
-         RX errors 0  dropped 0  overruns 0  frame 0
-         TX packets 400  bytes 79180 (79.1 KB)
-         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+.. image:: images/ubuntu_4.png
 
-   lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
-         inet 127.0.0.1  netmask 255.0.0.0
-         inet6 ::1  prefixlen 128  scopeid 0x10<host>
-         loop  txqueuelen 1000  (Local Loopback)
-         RX packets 352  bytes 38404 (38.4 KB)
-         RX errors 0  dropped 0  overruns 0  frame 0
-         TX packets 352  bytes 38404 (38.4 KB)
-         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+.. image:: images/ubuntu_5.png
 
-   wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-         inet 10.42.0.1  netmask 255.255.255.0  broadcast 10.42.0.255
-         inet6 fe80::a097:ebc1:3651:680  prefixlen 64  scopeid 0x20<link>
-         ether e4:5f:01:f8:f6:62  txqueuelen 1000  (Ethernet)
-         RX packets 431  bytes 65224 (65.2 KB)
-         RX errors 0  dropped 0  overruns 0  frame 0
-         TX packets 145  bytes 26839 (26.8 KB)
-         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+4. 윈도우를 살릴 사람은 잘선택해서 살리고 전 그냥 다 제거하고 우분투만 남겼습니다.
 
+.. image:: images/ubuntu_6.png
 
-네 바로 저 부분 입니다.
+5. 다음 버튼을 계속 눌러줍니다.
 
-그럼 이제 ``mobaXterm`` 에서 로봇에 연결하는 법을 배워보겠습니다.
+.. image:: images/ubuntu_7.png
 
-먼저 ``mobaXterm`` 화면에서 ``Session`` 버튼을 클릭합니다.
+.. image:: images/ubuntu_8.png
 
-.. image:: images/mobaXterm_2.png
+.. image:: images/ubuntu_9.png
 
-다음과 같은 화면이 나오는걸 확인할 수 있습니다.
+6. 계정 이름과 비밀번호를 입력하는 화면이 나오면 본인이 원하는 계정 이름과 패스워드를 입력합니다.
 
-.. image:: images/mobaXterm_3.png
+.. image:: images/ubuntu_10.png
 
-여기서 SSH버튼을 클릭합니다.
+7. 설치 중인 화면입니다.
 
-.. image:: images/mobaXterm_4.png
+.. image:: images/ubuntu_11.png
 
-그러면 이제 입력할 수 있는 곳들이 생깁니다. 여기서 우린 확인했던 ``IP`` 를 입력할 수 있고 처음 우분투 설치할 때 사용했던 ``우분투 계정의 이름`` 을 입력할 수 있습니다.
-``우분투 계정의 이름`` 은 지금 입력하지 않아도 됩니다. 대신 그럴 경우엔 매번 새롭게 접속 할 때 마다 ``우분투 계정의 이름`` 을 입력해야 합니다.
+8. 설치가 완료되고 재시작을 누릅니다.
 
-저 같은 경우엔 ``IP`` 주소가 ``192.168.0.216``, ``우분투 계정의 이름`` 은 ``zeta`` 이므로 입력해주겠습니다. 아래와 같이 Specify username을 체크하면 입력할 수 있습니다.
+.. image:: images/ubuntu_12.png
 
-.. image:: images/mobaXterm_5.png
+9. 설치에 사용한 USB를 제거하고 엔터를 누르면 완료.
 
-입력을 다 하고 ``OK`` 버튼을 클릭해주면
+.. image:: images/ubuntu_13.png
 
-.. image:: images/mobaXterm_6.png
+3 PC에서 로봇 WiFi 연결
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-연결이 되는걸 확인할 수 있습니다.
+설치가 다 되고 재부팅하면 선택 항목이 나오는데 중요하지 않으니 다음을 눌러 넘기면 된다.
 
+1. 처음에 우측 상단을 누른다. WiFi Not Connected를 선택한다.
+
+.. image:: images/pc_wifi_1.png
+
+2. Select Network를 누른다.
+
+.. image:: images/pc_wifi_2.png
+
+3. 화면 중앙에 선택할 수 있는 WiFi들이 나올 것이다. 여기서 로봇으로 만들었던 WiFi를 선택한다.
+
+.. image:: images/pc_wifi_3.png
+
+.. image:: images/pc_wifi_4.png
+
+4. 비밀번호를 입력하라고 나오는데 아까 설정한 비밀번호를 입력한다.
+
+.. image:: images/pc_wifi_5.png
+
+6. 다시 우측 상단을 확인하면 연결된걸 확인할 수 있다.
+
+.. image:: images/pc_wifi_6.png
+
+4 PC에서 로봇 ssh 연결
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+우리는 로봇에 WiFi에 연결 되어 있는 상태이다. 또한 아까 로봇에 ``openssh-server`` 를 설치한 상태이다.
+
+이제 우리는 로봇에 ``ssh`` 접속 이라는걸 할 수 있다. 방법은 쉽다. 
+
+1. PC의 터미널을 연다.
+
+.. image:: images/ssh_1.png
+
+2. ``ssh 로봇의이름@IP주소`` 순서로 터미널에 입력한다.
+
+.. image:: images/ssh_2.png
+
+3. ``yes`` 입력, ``비밀번호`` 입력
+
+.. image:: images/ssh_3.png
+
+.. image:: images/ssh_4.png
+
+4. 연결된 모습을 확인할 수 있다.
+
+.. image:: images/ssh_5.png
 
 요약
 -------
 
 PC에서 로봇에 연결하는 방법을 학습했습니다. 이제 우리는 PC에서 로봇의 터미널에 명령을 줄 수 있습니다. 
 
-뒤의 배우는 모든 과정의 기본은 먼저 PC에서 로봇에 연결하는 것입니다. 로봇의 위가 계속 열린채로 교육을 할 수는 없기 때문이죠~~~
-
-마지막의 자율주행 할 때를 제외하면 되도록이면 LAN 선을 사용하는 것을 추천합니다.
 
 다음 단계
 ----------
 
-다음엔 로봇에서 ROS2 설치 하는 방법에 대해서 알아보겠습니다.
+다음엔 로봇과 PC에 ROS2를 설치 하는 방법에 대해서 알아보겠습니다.

@@ -3,6 +3,8 @@ Ubuntu (Debian 패키지)
 
 ROS 2 Humble Hawksbill의 Debian 패키지는 현재 Ubuntu Jammy용으로 제공되고 있습니다.
 
+여기서 로봇과 PC 둘 다 설치를 진행하면 됩니다.
+
 자료
 ----
 

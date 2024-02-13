@@ -7,7 +7,7 @@ zeta2 autonomous
 
 ``mapping`` 의 방법으론 ``slam_tool_box`` 패키지와 ``cartographer`` 패키지 두개를 사용해서 해보도록 하겠습니다.
 
-이 때는 유선 연결이 더 좋지만 자율주행을 위해 움직여야 하기 때문에 무선으로 진행해야 할 것입니다.
+이 과정은 우분투 PC 에서 진행을 해야합니다. 패키지 또한 로봇에 설치하는 것이 아닌 PC에서 새로 만들 것입니다.
 
 앞서 WiFi Setting을 했기 때문에 우리는 문제 없이 로봇과 연결 할 수 있습니다.
 
@@ -40,10 +40,30 @@ zeta2 autonomous
 
 다음으론 zeta2_autonomous 패키지를 설치하겠습니다.
 
+.. note::
+    
+    **소스 해주기 전**
+    
+    과거 과정에서 소스 자동화를 하지 않았다면 여기서 해주는게 편합니다.
+
+    PC의 터미널을 열고
+
+    .. code-block:: bash
+
+        echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+
+        source ~/.bashrc
+
+    이 명령어를 입력합니다.
+
+    한 번만 입력해 두면 다음부터 새로운 터미널을 열 때 마다 자동으로 소스가 진행 됩니다.
+
 
 .. code-block:: bash
    
-   source /opt/ros/humble/setup.bash
+   source /opt/ros/humble/setup.bash // 위의 note 과정을 진행했으면 생략 가능
+
+   mkdir -p ~/zeta_ws/src
 
    cd ~/zeta_ws/src
    git clone https://github.com/zetabank-devteam/zeta2_edu_autonomous.git
@@ -55,30 +75,68 @@ zeta2 autonomous
    source ~/zeta_ws/install/setup.bash
 
 
-이제 필요한 패키지들은 설치가 완료 되었습니다. 이제 사용법에 대해서 설명하겠습니다.
+.. note::
+    
+    **방금 만든 워크스페이스 소스 하는 법**
+    
+    우리가 만든 워크스페이스에서도 자동으로 소스를 할 수 있게 만들 수 있습니다.
 
-2 slam tool box 매핑
+    PC의 터미널을 열고
+
+    .. code-block:: bash
+
+        echo "source  ~/zeta_ws/install/setup.bash" >> ~/.bashrc
+        
+        source ~/.bashrc
+
+    이 명령어를 입력합니다.
+
+    한 번만 입력해 두면 다음부터 새로운 터미널을 열 때 마다 자동으로 소스가 진행 됩니다.
+
+
+이제 필요한 패키지들은 설치가 완료 되었습니다. 다음은 로봇과 PC의 시간을 맞추겠습니다.
+
+
+2 로봇과 PC 시간 맞추기
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+현재 로봇의 경우는 인터넷에 연결되어 있지 않습니다. 그래서 현재 PC의 날짜와 시간을 로봇으로 알려주는 스크립트를 작성했습니다.
+
+로봇과의 연결을 할 때 마다 이 스크립트를 실행하여 주셔야합니다. 
+
+경로는 zeta2_edu_autonomous 폴더의 scripts 안에 있습니다.
+
+아마 처음엔 실행 권한이 없어서 실행이 안될 수 있으니 권한부터 주겠습니다.
+
+.. code-block:: bash
+
+   sudo chmod +x ~/zeta_ws/src/zeta2_edu_autonomous/scripts/time.sh
+
+다음은 실행입니다.
+
+.. code-block:: bash
+
+   ~/zeta_ws/src/zeta2_edu_autonomous/scripts/time.sh
+
+
+로봇의 비밀번호를 ssh 접속할 때 1번, 접속해서 시간 설정할 때 1번 총 2번 입력하면 됩니다.
+
+
+3 slam tool box 매핑
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-먼저 ``zeta2_bringup`` 을 실행합니다.
+먼저 로봇에 접속해 ``zeta2_bringup`` 을 실행합니다.
 
 .. image:: images/1_common.png
 
 .. code-block:: bash
 
-   ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, making tf, scan
+   ssh zeta@10.42.0.1
 
-새로운 터미널을 열고 조이스틱 조작을 위해 zeta_joy를 실행한다. (``zeta_ws`` 를 계속 source 해줘야 합니다.)
+   ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, making tf, scan, joy
 
-.. image:: images/2_slam.png
 
-.. code-block:: bash
-
-   source ~/zeta_ws/install/setup.bash
-
-   ros2 launch zeta2_bringup zeta_joy.launch.py
-
-새로운 터미널을 열고 zeta_slam_toolbox를 실행한다. (``zeta_ws`` 를 계속 source 해줘야 합니다.)
+새로운 터미널을 열고 이번엔 로봇에 접속하지 않고 zeta_slam_toolbox를 실행한다. (``zeta_ws`` 를 계속 source 해줘야 합니다.)
 
 .. code-block:: bash
    
@@ -152,26 +210,21 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 
 
 
-3 cartographer 매핑
+4 cartographer 매핑
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-먼저 ``zeta2_bringup`` 을 실행한다.
+먼저 로봇에 접속해 ``zeta2_bringup`` 을 실행합니다.
 
 .. image:: images/1_common.png
 
 .. code-block:: bash
 
-   ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, making tf, scan
+   ssh zeta@10.42.0.1
 
-새로운 터미널에서 조이스틱 조작을 위해 ``zeta_joy`` 를 실행한다.
+   ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, making tf, scan, joy
 
-.. image:: images/2_slam.png
 
-.. code-block:: bash
-
-   ros2 launch zeta2_bringup zeta_joy.launch.py
-
-새로운 터미널에서 zeta_cartographer를 실행한다.
+새로운 터미널을 열고 이번엔 로봇에 접속하지 않고 zeta_cartographer를 실행한다.
 
 .. code-block:: bash
 
@@ -198,7 +251,7 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 .. image:: images/6_carto.png
 
 
-4 navigation2 실행
+5 navigation2 실행
 ^^^^^^^^^^^^^^^^^^
 
 이 부분은 이제 로봇을 자율주행 하는 부분 입니다. 이 로봇은 ``DWBLocalPlanner`` 를 사용하여 주행합니다.
@@ -313,7 +366,7 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
    colcon build --packages-select zeta2_navigation
 
 
-``zeta2_navigation`` 을 실행 할 땐 ``zeta2_bringup`` 이 실행 되고 있어야 한다.
+``zeta2_navigation`` 을 실행 할 땐 로봇의 ``zeta2_bringup`` 이 실행 되고 있어야 한다.
 
 .. code-block:: bash
 
