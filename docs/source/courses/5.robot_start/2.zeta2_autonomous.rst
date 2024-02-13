@@ -370,6 +370,8 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 
 .. code-block:: bash
 
+   ssh zeta@10.42.0.1
+   
    source ~/zeta_ws/install/setup.bash
    ros2 launch zeta2_bringup zeta2_bringup.launch.py
 
