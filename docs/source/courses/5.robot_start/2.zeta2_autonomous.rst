@@ -368,10 +368,12 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 
 ``zeta2_navigation`` 을 실행 할 땐 로봇의 ``zeta2_bringup`` 이 실행 되고 있어야 한다.
 
+로봇에 ssh 접속하고 bringup 실행
+
 .. code-block:: bash
 
    ssh zeta@10.42.0.1
-   
+
    source ~/zeta_ws/install/setup.bash
    ros2 launch zeta2_bringup zeta2_bringup.launch.py
 
