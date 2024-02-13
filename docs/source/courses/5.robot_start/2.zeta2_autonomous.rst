@@ -34,6 +34,7 @@ zeta2 autonomous
    sudo apt install ros-humble-cartographer-ros -y
 
    # navigation
+   sudo apt install ros-humble-xacro -y
    sudo apt install ros-humble-navigation2 -y
    sudo apt install ros-humble-nav2-bringup -y
 
