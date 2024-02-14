@@ -89,3 +89,9 @@ In Education Provided by ZetaBank:
     :hidden:
     
     courses/5.robot_start/0.index
+
+.. toctree:: 
+    :caption: Navigation2 Packages
+    :hidden:
+    
+    courses/6.navigation2/0.index

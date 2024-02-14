@@ -405,3 +405,8 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 ``navigation2`` 를 사용하여 자율주행 하는 법을 배웠습니다.
 
 구체적이고 자세한 설명은 각각의 패키지들에 대한 설명사이트를 참고하시길 바랍니다.(`slam_toolbox <https://github.com/SteveMacenski/slam_toolbox>`__, `cartographer <https://google-cartographer.readthedocs.io/en/latest/>`__, `navigation2 <https://navigation.ros.org/>`__)
+
+다음 단계
+----------
+
+다음 과정에선 자율주행할 때 사용한 파라미터들에 대해서 알아보겠습니다.
