@@ -95,35 +95,9 @@ zeta2 autonomous
     한 번만 입력해 두면 다음부터 새로운 터미널을 열 때 마다 자동으로 소스가 진행 됩니다.
 
 
-이제 필요한 패키지들은 설치가 완료 되었습니다. 다음은 로봇과 PC의 시간을 맞추겠습니다.
+이제 필요한 패키지들은 설치가 완료 되었습니다. 
 
-
-2 로봇과 PC 시간 맞추기
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-현재 로봇의 경우는 인터넷에 연결되어 있지 않습니다. 그래서 현재 PC의 날짜와 시간을 로봇으로 알려주는 스크립트를 작성했습니다.
-
-로봇과의 연결을 할 때 마다 이 스크립트를 실행하여 주셔야합니다. 
-
-경로는 zeta2_edu_autonomous 폴더의 scripts 안에 있습니다.
-
-아마 처음엔 실행 권한이 없어서 실행이 안될 수 있으니 권한부터 주겠습니다.
-
-.. code-block:: bash
-
-   sudo chmod +x ~/zeta_ws/src/zeta2_edu_autonomous/scripts/time.sh
-
-다음은 실행입니다.
-
-.. code-block:: bash
-
-   ~/zeta_ws/src/zeta2_edu_autonomous/scripts/time.sh
-
-
-로봇의 비밀번호를 ssh 접속할 때 1번, 접속해서 시간 설정할 때 1번 총 2번 입력하면 됩니다.
-
-
-3 slam tool box 매핑
+2 slam tool box 매핑
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 먼저 로봇에 접속해 ``zeta2_bringup`` 을 실행합니다.
@@ -211,7 +185,7 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 
 
 
-4 cartographer 매핑
+3 cartographer 매핑
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 먼저 로봇에 접속해 ``zeta2_bringup`` 을 실행합니다.
@@ -252,7 +226,7 @@ rviz 화면을 보고 지도를 다 그리면 지도를 저장한다. 'Map saved
 .. image:: images/6_carto.png
 
 
-5 navigation2 실행
+4 navigation2 실행
 ^^^^^^^^^^^^^^^^^^
 
 이 부분은 이제 로봇을 자율주행 하는 부분 입니다. 이 로봇은 ``DWBLocalPlanner`` 를 사용하여 주행합니다.
