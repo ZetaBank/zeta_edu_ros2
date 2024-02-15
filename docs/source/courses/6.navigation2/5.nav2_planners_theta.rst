@@ -1,6 +1,8 @@
 Theta Star Planner 설정
 ==========================
 
+``zeta2_navigation_theta.launch.py`` 를 실행하면 체험해 볼 수 있습니다.
+
 Theta Star Planner는 A*를 사용하여 어떤 각도의 선분에 초점을 맞춘 경로를 계획하는 Theta* 경로 계획기를 구현합니다.
 
 아래 예제에서는 계획기가 약 46ms(평균 값)의 시간이 걸렸고 길이가 87.5m인 경로를 계산했습니다.

@@ -74,125 +74,28 @@ OS가 설치된 SD카드를 로봇의 위를 들어 올려서 라즈베리 파�
 이제 로봇에서 우분투를 사용할 준비가 끝났습니다.
 
 
-2 로봇 ``HotSpot`` 설정하기
+2 로봇 ``WiFi`` 설정하기
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-이번 과정에선 로봇이 인터넷이 되지 않는 환경에서도 PC와 연결할 수 있게 로봇을 ``HotSpot`` 으로 구성할 것입니다.
+이번 과정에선 로봇을 무선환경에서 사용할 수 있게 ``WiFi`` 에 연결하는 방법을 알아보겠습니다.
 
-``HotSpot`` 의 이름은 이더넷 맥 어드레스 뒤의 4개로 하기로 하겠습니다.
+1. 로봇을 화면 오른쪽 위를 클릭하고 wifi 아이콘을 누릅니다
 
+.. image:: images/robot_wifi_1.png
 
-먼저 아래의 사진이 나오는 것입니다.
+위의 사진은 이미 연결된 상태여서 저렇게 나오긴 합니다.
 
-.. image:: images/wifi_1.png
+2. Select Network를 눌러줍니다. 그럼 다음과 같은 화면이 중앙에 나올 것입니다.
 
-ip 주소를 얻는 방법은 여러개가 있으나 가장 쉬운 방법은 ``ifconfig`` 라는 명령어를 사용하는 것 입니다. 그러기 위해선 우분투의 ``net-tools`` 패키지가 설치되어야 합니다.
+.. image:: images/robot_wifi_2.png
 
-.. code-block:: bash
+3. 본인의 네트워크를 선택하고 Connect 버튼을 누르면 비밀번호 입력하는 화면이 나옵니다.
 
-   sudo apt update
-   sudo apt install net-tools
+.. image:: images/robot_wifi_4.png
 
-``net-tools``가 설치 되었으면 이제 아래의 명령어로 정보를 확인할 수 있습니다. 아래의 정보는 ``HotSpot`` 을 설정한 이 후의 출력결과 입니다. 
+3. 로봇을 화면 오른쪽 위를 클릭하여 연결된 것을 확인할 수 있습니다.
 
-방금 전의 이미지에 나오는 정보처럼 나오게 될 것 입니다.
-
-.. code-block:: bash
-
-   zeta@zeta-desktop:~$ ifconfig
-   eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-         inet 192.168.0.119  netmask 255.255.255.0  broadcast 192.168.0.255
-         inet6 fe80::17d4:711e:d14c:390b  prefixlen 64  scopeid 0x20<link>
-         ether e4:5f:01:f2:'e7:98'  txqueuelen 1000  (Ethernet)
-         RX packets 23653  bytes 28893076 (28.8 MB)
-         RX errors 0  dropped 0  overruns 0  frame 0
-         TX packets 16292  bytes 13972500 (13.9 MB)
-         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-   lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
-         inet 127.0.0.1  netmask 255.0.0.0
-         inet6 ::1  prefixlen 128  scopeid 0x10<host>
-         loop  txqueuelen 1000  (Local Loopback)
-         RX packets 595  bytes 54723 (54.7 KB)
-         RX errors 0  dropped 0  overruns 0  frame 0
-         TX packets 595  bytes 54723 (54.7 KB)
-         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-   wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-         inet 10.42.0.1  netmask 255.255.255.0  broadcast 10.42.0.255
-         inet6 fe80::eb54:a26d:6e0e:514e  prefixlen 64  scopeid 0x20<link>
-         ether e4:5f:01:f2:e7:99  txqueuelen 1000  (Ethernet)
-         RX packets 0  bytes 0 (0.0 B)
-         RX errors 0  dropped 0  overruns 0  frame 0
-         TX packets 50  bytes 5259 (5.2 KB)
-         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-여기서 ``eht0`` 의 안에 있는 ``ether`` 의 정보를 확인해 봅시다. 
-
-.. code-block:: bash
-
-   eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-   ...
-         ether e4:5f:01:f2:'e7:98'  txqueuelen 1000  (Ethernet)
-   ...
-
-``e7:98`` 을 확인할 수 있습니다. 이 ``e798`` 이 우리 HotSpot의 뒷 이름이 될 것 입니다.
-
-
-sudo apt install openssh-server
-```
-
-다음으론 핫스팟을 키는 법에 대해 설명하겠습니다.
-
-먼저 바탕화면에서 우측 상단 클릭
-
-.. image:: images/wifi_2.png
-
-나온 선택지에서 ``WiFi-Not Connected``
-
-.. image:: images/wifi_3.png
-
-다음은 ``Wi-Fi Settings``
-
-.. image:: images/wifi_4.png
-
-다음으론 ``점 세개``
-
-.. image:: images/wifi_5.png
-
-다음으로 ``Turn On Wi-Fi Hotspot...``
-
-.. image:: images/wifi_6.png
-
-이름을 설정할 때 아까 위에서 확인했던 ``e798`` 를 입력합니다
-
-.. code-block:: bash
-      
-   Network Name: zeta2_e798
-
-   Password: 12345678
-
-``Turn On`` 버튼을 눌러주면 일단 HotSpot은 생성 됩니다.
-
-.. image:: images/wifi_7.png
-
-
-하지만 우리는 로봇을 껐다가 켰을 때도 HotSpot 상태를 유지하고 싶습니다.
-
-아래의 순서를 따라하면 됩니다.
-
-.. code-block:: bash
-   sudo -H gedit /etc/NetworkManager/system-connections/Hotspot.nmconnection
-
-   autoconnect=false -> autoconnect=true
-
-.. image:: images/wifi_8.png
-
-.. image:: images/wifi_9.png
-
-이 경우에 로봇 자체의 IP는 ``10.42.0.1`` 로 설정 됩니다.
-
-본인의 로봇의 WiFi에 연결하고 ssh 연결을 할 때는 ``10.42.0.1`` 이란 IP를 사용하시면 됩니다.
+.. image:: images/robot_wifi_1.png
 
 2 로봇 ``openssh-server`` 설정하기
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -204,12 +107,53 @@ sudo apt install openssh-server
    sudo apt update
    sudo apt install openssh-server
 
+또한 로봇의 ``IP`` 를 알아야 ssh에 연결할 수 있습니다.
+
+
+.. code-block:: bash
+   
+   sudo apt update
+   sudo apt install net-tools
+
+net-tools를 설치하고  ifconfig를 입력하면 아래와 같이 나옵니다.
+
+.. code-block:: bash
+
+   ifconfig
+
+   eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+         ether e4:5f:01:f8:f6:61  txqueuelen 1000  (Ethernet)
+         RX packets 0  bytes 0 (0.0 B)
+         RX errors 0  dropped 0  overruns 0  frame 0
+         TX packets 0  bytes 0 (0.0 B)
+         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+   lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+         inet 127.0.0.1  netmask 255.0.0.0
+         inet6 ::1  prefixlen 128  scopeid 0x10<host>
+         loop  txqueuelen 1000  (Local Loopback)
+         RX packets 269  bytes 24464 (24.4 KB)
+         RX errors 0  dropped 0  overruns 0  frame 0
+         TX packets 269  bytes 24464 (24.4 KB)
+         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+   wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+         inet `192.168.0.220`  netmask 255.255.255.0  broadcast 192.168.0.255
+         inet6 fe80::97fe:6f81:7ec:6148  prefixlen 64  scopeid 0x20<link>
+         ether e4:5f:01:f8:f6:62  txqueuelen 1000  (Ethernet)
+         RX packets 13417  bytes 18507752 (18.5 MB)
+         RX errors 0  dropped 0  overruns 0  frame 0
+         TX packets 3503  bytes 676415 (676.4 KB)
+         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+`wlan0` 의 `inet` 에 있는 이 주소가 ``IP`` 주소입니다. 즉 ``192.168.0.220`` 라고 확인 할 수 이씁니다.
+
 요약
 -------
 
-로봇을 사용하기 위해서 SD 카드에 우분투 OS를 설치하고 로봇의 ``HotSpot`` 을 설정하는 작업을 완료했습니다.
+로봇을 사용하기 위해서 SD 카드에 우분투 OS를 설치하고 로봇의 ``WiFi`` 을 설정하는 작업을 완료했습니다.
 
-또한 나중에 PC와의 연결을 위해 ``openssh-server`` 을 설치했습니다.
+또한 나중에 PC와의 연결을 위해 ``openssh-server`` 를 설치하고 로봇의 ``IP`` 를 확인하는 법을 배웠습니다.
 
 다음 단계
 ----------

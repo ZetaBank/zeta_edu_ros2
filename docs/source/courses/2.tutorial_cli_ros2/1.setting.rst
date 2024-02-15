@@ -61,10 +61,31 @@ setup.bash파일을 source 해주면 환경변수가 시스템에 등록됩니�
 .. code-block:: bash 
 
    export ROS_DOMAIN_ID=<your_domain_id>
-
    echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bashrc
 
- 
+ 예시
+
+.. code-block:: bash 
+
+   echo "export ROS_DOMAIN_ID=33" >> ~/.bashrc
+   source ~/.bashrc
+
+이 경우엔 ROS_DOMAIN_ID 를 33으로 한 것입니다. 
+
+로봇과 PC 둘 다 맞춰줘야 서로 통신이 됩니다.
+
+DDS 설정
+----------
+
+ros2의 humble 버전에서 기본 dds인 fast dds의 연결에 대한 이슈가 많이 나와서  ``Eclipse Cyclone DDS`` 를 사용할 것이다.
+
+.. code-block:: bash 
+
+   sudo apt install ros-humble-rmw-cyclonedds-cpp
+   echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
+   source ~/.bashrc
+
+로봇과 PC 둘 다 맞춰줘야 서로 통신이 됩니다.
 
 Summary
 --------
