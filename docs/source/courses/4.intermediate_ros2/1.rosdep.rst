@@ -7,7 +7,7 @@ rosdep를 사용하여 종속성 관리
 
 .. warning::
 
-   현재로서 ``rosdep``는 Linux 및 macOS에서만 작동하며, Windows는 지원되지 않습니다.
+   현재로서 ``rosdep`` 는 Linux 및 macOS에서만 작동하며, Windows는 지원되지 않습니다.
    Windows 지원 계획은 https://github.com/ros-infrastructure/rosdep에 추가 예정입니다.
 
 rosdep가 무엇인가요?
