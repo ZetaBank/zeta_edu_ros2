@@ -65,7 +65,7 @@ In Education Provided by ZetaBank:
     courses/1.install_ros2_humble/1.robot_hardware_spec
     courses/1.install_ros2_humble/2.robot_hardware_check
     courses/1.install_ros2_humble/1.robot_setup
-    courses/1.install_ros2_humble/2.pc_seup
+    courses/1.install_ros2_humble/2.pc_setup
     courses/1.install_ros2_humble/3.install_ros2
 
 
