@@ -148,7 +148,7 @@ ROS와 함께 ``rosdep`` 를 사용하는 경우 ROS 배포와 함께 편리하�
     Debian 및 Ubuntu에서는 ``python3-rosdep2`` 라는 비슷한 이름의 패키지가 있습니다.
     해당 패키지가 설치된 경우 ``python3-rosdep`` 를 설치하기 전에 제거해야 합니다.
 
-ROS 이외의 환경에서 ``rosdep``를 사용하는 경우 시스템 패키지를 사용할 수 없을 수 있습니다.
+ROS 이외의 환경에서 ``rosdep`` 를 사용하는 경우 시스템 패키지를 사용할 수 없을 수 있습니다.
 이 경우 https://pypi.org에서 직접 설치할 수 있습니다.
 
 .. code-block:: bash
