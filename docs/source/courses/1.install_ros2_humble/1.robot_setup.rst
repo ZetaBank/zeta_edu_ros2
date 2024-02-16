@@ -91,7 +91,7 @@ OS가 설치된 SD카드를 로봇의 위를 들어 올려서 라즈베리 파�
 
 3. 본인의 네트워크를 선택하고 Connect 버튼을 누르면 비밀번호 입력하는 화면이 나옵니다.
 
-.. image:: images/robot_wifi_4.png
+.. image:: images/robot_wifi_3.png
 
 3. 로봇을 화면 오른쪽 위를 클릭하여 연결된 것을 확인할 수 있습니다.
 
