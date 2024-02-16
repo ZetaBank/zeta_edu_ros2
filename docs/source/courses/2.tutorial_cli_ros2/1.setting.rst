@@ -63,7 +63,8 @@ setup.bash파일을 source 해주면 환경변수가 시스템에 등록됩니�
    export ROS_DOMAIN_ID=<your_domain_id>
    echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bashrc
 
- 예시
+
+예시
 
 .. code-block:: bash 
 

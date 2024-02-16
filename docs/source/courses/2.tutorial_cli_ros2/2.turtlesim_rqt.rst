@@ -171,6 +171,7 @@ Remapping
 이제 yongyong도 한번 움직여 보도록 하겠습니다.
 
 새 터미널 창을 열고
+
 .. code-block:: console
 
    ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=yongyong/cmd_vel
