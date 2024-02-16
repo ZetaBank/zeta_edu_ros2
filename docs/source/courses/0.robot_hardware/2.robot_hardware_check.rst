@@ -227,7 +227,7 @@ Test 를 누르고 Left Test와 Right Test를 한 다음
 
 이런 식으로 ``/scan`` 데이터가 올라오는 것을 확인 할 수 있다.
 
-만약 ``ll /dev/ttyS0`` 이 없다면 `zeta2_bringup </courses/5.robot_start/1.zeta2_bringup>` 의 라이다 과정을 다시해보고
+만약 ``ll /dev/ttyS0`` 이 없다면 :doc:`zeta2_bringup </courses/5.robot_start/1.zeta2_bringup>` 의 라이다 과정을 다시해보고
 
 그래도 나타나지 않는다면 연결 확인을 다시 한다.
 

@@ -43,9 +43,9 @@ USB에 ISO 파일을 넣으면 이제 우분투 설치용 USB가 생성된 것�
 
 1. USB 메모리 스틱을 PC에 장착하고 전원 버튼을 켭니다. USB 부팅이 가능하도록 CMOS를 설정해야 하기 때문에 부팅과 동시에 F11 기능키를 누릅니다. 아래와 같은 부팅 디바이스 선택 화면이 출력됩니다.
 
-.. image:: images/ubuntu_1.png
+.. image:: images/ubuntu_1.jpg
 
-.. image:: images/ubuntu_2.png
+.. image:: images/ubuntu_2.jpg
 
 PC의 메인 보드에 따라서 눌려야 하는 버튼이 다를 수도 있습니다.
 
@@ -53,41 +53,41 @@ PC의 메인 보드에 따라서 눌려야 하는 버튼이 다를 수도 있습
 
 2. USB 장치가 인식되어 부팅이 시작 됩니다. Try Ubuntu or Install 을 설택한다음 -> Install 을 선택하면 설치가 진행됩니다.
 
-.. image:: images/ubuntu_3.png
+.. image:: images/ubuntu_3.jpg
 
 3. 다음 버튼을 눌러줍니다.
 
-.. image:: images/ubuntu_4.png
+.. image:: images/ubuntu_4.jpg
 
-.. image:: images/ubuntu_5.png
+.. image:: images/ubuntu_5.jpg
 
 4. 윈도우를 살릴 사람은 잘선택해서 살리고 전 그냥 다 제거하고 우분투만 남겼습니다.
 
-.. image:: images/ubuntu_6.png
+.. image:: images/ubuntu_6.jpg
 
 5. 다음 버튼을 계속 눌러줍니다.
 
-.. image:: images/ubuntu_7.png
+.. image:: images/ubuntu_7.jpg
 
-.. image:: images/ubuntu_8.png
+.. image:: images/ubuntu_8.jpg
 
-.. image:: images/ubuntu_9.png
+.. image:: images/ubuntu_9.jpg
 
 6. 계정 이름과 비밀번호를 입력하는 화면이 나오면 본인이 원하는 계정 이름과 패스워드를 입력합니다.
 
-.. image:: images/ubuntu_10.png
+.. image:: images/ubuntu_10.jpg
 
 7. 설치 중인 화면입니다.
 
-.. image:: images/ubuntu_11.png
+.. image:: images/ubuntu_11.jpg
 
 8. 설치가 완료되고 재시작을 누릅니다.
 
-.. image:: images/ubuntu_12.png
+.. image:: images/ubuntu_12.jpg
 
 9. 설치에 사용한 USB를 제거하고 엔터를 누르면 완료.
 
-.. image:: images/ubuntu_13.png
+.. image:: images/ubuntu_13.jpg
 
 4 PC에서 로봇 ssh 연결
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -98,17 +98,17 @@ PC의 메인 보드에 따라서 눌려야 하는 버튼이 다를 수도 있습
 
 1. PC의 터미널을 연다. ``ssh 로봇의이름@IP주소`` 순서로 터미널에 입력한다.
 
-.. image:: images/ssh_1.png
+.. image:: images/ssh_1.jpg
 
 2. ``yes`` 입력, ``비밀번호`` 입력
 
-.. image:: images/ssh_2.png
+.. image:: images/ssh_2.jpg
 
-.. image:: images/ssh_3.png
+.. image:: images/ssh_3.jpg
 
 4. 연결된 모습을 확인할 수 있다.
 
-.. image:: images/ssh_4.png
+.. image:: images/ssh_4.jpg
 
 
 요약
