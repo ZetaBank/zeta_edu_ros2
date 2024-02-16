@@ -95,9 +95,11 @@ In Education Provided by ZetaBank:
     courses/3.tutorial_client_libraries/5.writing_a_simple_py_pub_and_sub
     courses/3.tutorial_client_libraries/6.writing_a_simple_cpp_service_and_client
     courses/3.tutorial_client_libraries/7.writing_a_simple_py_service_and_client
-    courses/3.tutorial_client_libraries/8.using_parameters_cpp
-    courses/3.tutorial_client_libraries/9.using_parameters_py
-    courses/3.tutorial_client_libraries/10.using_ros2doctor
+    courses/3.tutorial_client_libraries/8.create_msg_and_srv
+    courses/3.tutorial_client_libraries/9.implementing_custom_interface
+    courses/3.tutorial_client_libraries/10.using_parameters_cpp
+    courses/3.tutorial_client_libraries/11.using_parameters_py
+    courses/3.tutorial_client_libraries/12.using_ros2doctor
 
 .. toctree:: 
     :caption: ROS 2 Intermediate
