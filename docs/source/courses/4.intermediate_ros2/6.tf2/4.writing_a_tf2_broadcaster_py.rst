@@ -12,7 +12,7 @@
 필수 준비 사항
 -------------
 
-이 튜토리얼은 ROS 2에 대한 작업 지식과 이전에 작성한 :doc:`tf2 소개 튜토리얼 <./1.introduction_to_tf2`>` 및 :doc:`tf2 정적 브로드캐스터 튜토리얼 (Python) <./2.writing_a_tf2_static_broadcaster_py>` 을 완료한 것으로 가정합니다.
+이 튜토리얼은 ROS 2에 대한 작업 지식과 이전에 작성한 :doc:`tf2 소개 튜토리얼 <./1.introduction_to_tf2>` 및 :doc:`tf2 정적 브로드캐스터 튜토리얼 (Python) <./2.writing_a_tf2_static_broadcaster_py>` 을 완료한 것으로 가정합니다.
 우리는 마지막 튜토리얼에서 만든 ``learning_tf2_py`` 패키지를 다시 사용할 것입니다.
 
 또한 이전 튜토리얼에서는 :doc:`작업 공간을 생성하는 방법 </courses/3.tutorial_client_libraries/2.create_workspace>` 과 :doc:`패키지를 생성하는 방법 </courses/3.tutorial_client_libraries/3.create_package>` 을 배웠습니다.

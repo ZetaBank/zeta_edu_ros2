@@ -44,7 +44,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_velocity_scaled_lookahead_dist``가 ``false``일 때 내다보기 지점을 찾을 때 사용하는 내다보기 거리 (m).
+    ``use_velocity_scaled_lookahead_dist`` 가 ``false`` 일 때 내다보기 지점을 찾을 때 사용하는 내다보기 거리 (m).
 
 :min_lookahead_dist:
 
@@ -55,7 +55,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_velocity_scaled_lookahead_dist``가 ``true``일 때 최소 내다보기 거리 (m) 임계값.
+    ``use_velocity_scaled_lookahead_dist`` 가 ``true`` 일 때 최소 내다보기 거리 (m) 임계값.
 
 :max_lookahead_dist:
 
@@ -66,7 +66,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_velocity_scaled_lookahead_dist``가 ``true``일 때 최대 내다보기 거리 (m) 임계값.
+    ``use_velocity_scaled_lookahead_dist`` 가 ``true`` 일 때 최대 내다보기 거리 (m) 임계값.
 
 :lookahead_time:
 
@@ -77,7 +77,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_velocity_scaled_lookahead_dist``가 ``true``일 때 속도를 예측하는 데 사용되는 시간 (s). 내다보기 이득이라고도 함.
+    ``use_velocity_scaled_lookahead_dist`` 가 ``true`` 일 때 속도를 예측하는 데 사용되는 시간 (s). 내다보기 이득이라고도 함.
 
 :rotate_to_heading_angular_vel:
 
@@ -88,7 +88,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_rotate_to_heading``가 ``true``이면 사용되는 각속도입니다.
+    ``use_rotate_to_heading`` 가 ``true`` 이면 사용되는 각속도입니다.
 
 :transform_tolerance:
 
@@ -110,7 +110,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    속도에 따라 조정 가능한 내다보기 거리 또는 상수 ``lookahead_distance``를 사용할지 여부입니다.
+    속도에 따라 조정 가능한 내다보기 거리 또는 상수 ``lookahead_distance`` 를 사용할지 여부입니다.
 
 :min_approach_linear_velocity:
 
@@ -121,7 +121,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    목표 지점에 접근할 때 진행을 보장하기 위해 적용되는 최소 속도 (m/s) 임계값입니다. ``> 0.01``이어야 합니다. 
+    목표 지점에 접근할 때 진행을 보장하기 위해 적용되는 최소 속도 (m/s) 임계값입니다. ``> 0.01`` 이어야 합니다. 
 
 :approach_velocity_scaling_dist:
 
@@ -154,7 +154,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_collision_detection``가 ``true``일 때 충돌을 확인하기 위해 속도 명령을 앞으로 프로젝션할 시간 (s). Pre-``Humble``에서는 ``max_allowed_time_to_collision``이었습니다.
+    ``use_collision_detection`` 가 ``true`` 일 때 충돌을 확인하기 위해 속도 명령을 앞으로 프로젝션할 시간 (s). Pre-``Humble``에서는 ``max_allowed_time_to_collision`` 이었습니다.
 
 :use_regulated_linear_velocity_scaling:
 
@@ -187,7 +187,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_regulated_linear_velocity_scaling``이 ``true``일 때 규제 기능이 트리거되는 회전 반경 (m). 더 작은 반경은 더 낮은 속도를 가져옵니다.
+    ``use_regulated_linear_velocity_scaling`` 이 ``true`` 일 때 규제 기능이 트리거되는 회전 반경 (m). 더 작은 반경은 더 낮은 속도를 가져옵니다.
 
 :regulated_linear_scaling_min_speed:
 
@@ -198,7 +198,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    규제된 휴리스틱이 높은 비용 공간과 높은 곡률을 가진 경로에서도 여전히 달성 가능하도록 하는 데 사용할 수 있는 최소 속도 (m/s). ``> 0.1``이어야 합니다.
+    규제된 휴리스틱이 높은 비용 공간과 높은 곡률을 가진 경로에서도 여전히 달성 가능하도록 하는 데 사용할 수 있는 최소 속도 (m/s). ``> 0.1`` 이어야 합니다.
 
 :use_fixed_curvature_lookahead:
 
@@ -233,7 +233,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   설명
     홀로노믹 플래너를 사용할 때 대략적인 헤딩 및 목표 방향으로 회전을 가능하게 할지 여부입니다. 장소에서 회전할 수 있는 모든 로봇 유형에 대해 권장됩니다. 
 
-    참고: ``use_rotate_to_heading`` 및 ``allow_reversing`` 모두 동시에 ``true``로 설정할 수 없습니다. 이렇게하면 모호한 상황이 발생합니다.
+    참고: ``use_rotate_to_heading`` 및 ``allow_reversing`` 모두 동시에 ``true`` 로 설정할 수 없습니다. 이렇게하면 모호한 상황이 발생합니다.
 
 :allow_reversing:
 
@@ -246,7 +246,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   설명
     경로가 후진하는 것을 포함하는 경우 로봇이 후진하도록 허용합니다(이는 방향 변경을 나타내는 방향 각도로 표시됨). smac_planner의 변형은 후진을 지원합니다. 자세한 내용은 :ref:`configuring_smac_planner` 를 확인하십시오.
 
-    참고: ``use_rotate_to_heading`` 및 ``allow_reversing`` 모두 동시에 ``true``로 설정할 수 없습니다. 이렇게하면 모호한 상황이 발생합니다.
+    참고: ``use_rotate_to_heading`` 및 ``allow_reversing`` 모두 동시에 ``true`` 로 설정할 수 없습니다. 이렇게하면 모호한 상황이 발생합니다.
 
 :rotate_to_heading_min_angle:
 
@@ -257,7 +257,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명
-    ``use_rotate_to_heading``가 ``true``인 경우 경로 방향과 시작 로봇 방향의 차이 (라디안)가 회전을 트리거하는 임계값입니다.
+    ``use_rotate_to_heading`` 가 ``true`` 인 경우 경로 방향과 시작 로봇 방향의 차이 (라디안)가 회전을 트리거하는 임계값입니다.
 
 :max_angular_accel:
 
@@ -268,7 +268,7 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =============================
 
   설명max_allowed_time_to_collision
-    ``use_rotate_to_heading``가 ``true``인 경우 헤딩으로 회전할 때 허용되는 최대 각 가속도 (rad/s/s).
+    ``use_rotate_to_heading`` 가 ``true`` 인 경우 헤딩으로 회전할 때 허용되는 최대 각 가속도 (rad/s/s).
 
 :max_robot_pose_search_dist:
 
@@ -279,7 +279,10 @@ Github_에서 소스 코드를 확인하실 수 있습니다.
   ============== =================================================
 
   설명
-    로봇 위치에 가장 가까운 자세를 검색하기 위해 전역 계획을 따라 통합된 거리의 상한입니다. 이 값을 변경할 필요가 있는 경우 지역 코스트맵을 벗어나지 않는 루프와 교차로가 있는 경로가 있습니다. 이 경우 이 값을 줄여서 바로 가기를 방지해야 합니다. ``-1``로 설정하면 경로의 모든 지점에서 가장 가까운 경로 지점을 검색합니다.
+    로봇 위치에 가장 가까운 자세를 검색하기 위해 전역 계획을 따라 통합된 거리의 상한입니다.
+    이 값을 변경할 필요가 있는 경우 지역 코스트맵을 벗어나지 않는 루프와 교차로가 있는 경로가 있습니다.
+    이 경우 이 값을 줄여서 바로 가기를 방지해야 합니다.
+    ``-1`` 로 설정하면 경로의 모든 지점에서 가장 가까운 경로 지점을 검색합니다.
 
 
   

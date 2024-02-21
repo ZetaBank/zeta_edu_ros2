@@ -15,3 +15,4 @@
    9.nav2_controllers_mppi
    10.nav2_controllers_rotation_shim
    11.nav2_controllers_graceful
+   12.nav2_conclusion
