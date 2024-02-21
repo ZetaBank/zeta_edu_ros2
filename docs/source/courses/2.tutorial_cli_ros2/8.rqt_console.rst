@@ -16,7 +16,7 @@
 전제 조건
 -------------
 
-::doc:`rqt_console 및 turtlesim </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 을 설치해야 합니다.
+:doc:`rqt_console 및 turtlesim </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 을 설치해야 합니다.
 
 항상 새로운 터미널을 열 때마다 ROS 2를 source하는 것을 잊지 마십시오.
 
@@ -53,7 +53,7 @@
 2 rqt_console에서 메시지
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``rqt_console``에서 표시할 로그 메시지를 생성하려면 거북이를 벽에 부딪히게 해보겠습니다.
+``rqt_console`` 에서 표시할 로그 메시지를 생성하려면 거북이를 벽에 부딪히게 해보겠습니다.
 새 터미널에서 다음 명령을 입력하십시오. (:doc:`토픽 </courses/2.tutorial_cli_ros2/4.topic>` 튜토리얼에서 자세히 다루었습니다.)
 
 .. code-block:: console

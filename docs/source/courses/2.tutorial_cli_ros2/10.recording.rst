@@ -118,7 +118,7 @@ ROS 2를 설치해야 하는 경우 :doc:`설치 지침 </courses/1.install_ros2
 
     ros2 bag record /turtle1/cmd_vel
 
-이제 ``ros2 bag``가 ``/turtle1/cmd_vel`` 토픽에서 발행되는 데이터를 녹화하고 있습니다.
+이제 ``ros2 bag`` 가 ``/turtle1/cmd_vel`` 토픽에서 발행되는 데이터를 녹화하고 있습니다.
 텔레옵 터미널로 돌아가서 거북이를 다시 움직여보십시오.
 움직임의 내용은 중요하지 않지만, 나중에 데이터를 재생할 때 패턴을 인식하기 쉽도록 눈에 띄게 움직여보세요.
 
@@ -235,5 +235,5 @@ bag 파일을 재생하기 전에 텔레옵이 실행 중인 터미널에서 ``C
 관련 콘텐츠
 ---------------
 
-``ros2 bag`` 에 대한 자세한 설명은 README :doc:`ros2 bag <https://github.com/ros2/rosbag2>`__ 에서 찾을 수 있습니다.
+``ros2 bag`` 에 대한 자세한 설명은 README `ros2 bag <https://github.com/ros2/rosbag2>`__ 에서 찾을 수 있습니다.
 QoS 호환성 및 ``ros2 bag`` 에 대한 자세한 정보는 `Qos 호환성 <https://docs.ros.org/en/humble/How-To-Guides/Overriding-QoS-Policies-For-Recording-And-Playback.html>`__ 을 참조하십시오.
