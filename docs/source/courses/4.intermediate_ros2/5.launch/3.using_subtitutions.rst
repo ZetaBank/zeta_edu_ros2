@@ -19,7 +19,7 @@
 이 튜토리얼은 :doc:`turtlesim </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 패키지를 사용합니다.
 또한 :doc:`패키지 생성 </courses/3.tutorial_client_libraries/3.create_package>` 에 익숙하다고 가정합니다.
 
-새로운 터미널을 열 때마다 ROS 2를 소스화하는 것을 잊지 마십시오. :doc:`여기 <../../Beginner-CLI-Tools/Configuring-ROS2-Environment>`를 참고하세요.
+새로운 터미널을 열 때마다 ROS 2를 소스화하는 것을 잊지 마십시오. :doc:`여기 <../../Beginner-CLI-Tools/Configuring-ROS2-Environment>` 를 참고하세요.
 
 대체 사용법 사용하기
 -------------------
@@ -365,7 +365,7 @@
 문서화
 -------------
 
-`런치 문서 <https://github.com/ros2/launch/blob/{REPOS_FILE_BRANCH}/launch/doc/source/architecture.rst>`_에서 사용 가능한 대체 사용법에 대한 자세한 정보를 제공합니다.
+`런치 문서 <https://github.com/ros2/launch/blob/{REPOS_FILE_BRANCH}/launch/doc/source/architecture.rst>`_ 에서 사용 가능한 대체 사용법에 대한 자세한 정보를 제공합니다.
 
 요약
 -------
@@ -373,4 +373,4 @@
 이 튜토리얼에서는 런치 파일에서 대체 사용법 사용에 대해 배웠습니다.
 대체 사용법의 가능성과 재사용 가능한 런치 파일을 만드는 데 사용할 수 있는 능력을 배웠습니다.
 
-이제 런치 파일을 동적으로 수정하는 데 사용되는 이벤트 핸들러 사용에 대해 더 알아볼 수 있습니다. :doc:`이벤트 핸들러 사용하기 <./4.using_event_handlers>``
+이제 런치 파일을 동적으로 수정하는 데 사용되는 이벤트 핸들러 사용에 대해 더 알아볼 수 있습니다. :doc:`이벤트 핸들러 사용하기 <./4.using_event_handlers>`
