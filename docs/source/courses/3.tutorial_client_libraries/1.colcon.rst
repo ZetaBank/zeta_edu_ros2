@@ -82,7 +82,7 @@ colcon은 외부 빌드를 지원합니다.
 
 .. code-block:: bash
 
-    git clone https://github.com/ros2/examples src/examples -b {REPOS_FILE_BRANCH}
+    git clone https://github.com/ros2/examples src/examples -b humble
 
 이제 워크스페이스에 ROS 2 예제의 소스 코드가 있어야 합니다.
 
@@ -184,9 +184,9 @@ colcon은 여러 빌드 유형을 지원합니다.
 권장 빌드 유형은 ``ament_cmake`` 및 ``ament_python`` 입니다.
 순수한 ``cmake`` 패키지도 지원됩니다.
 
-``ament_python`` 빌드 예제는 `ament_index_python 패키지 <https://github.com/ament/ament_index/tree/{REPOS_FILE_BRANCH}/ament_index_python>`__ 입니다. 여기서 setup.py가 주요 빌드 진입점 역할을 합니다.
+``ament_python`` 빌드 예제는 `ament_index_python 패키지 <https://github.com/ament/ament_index/tree/humble/ament_index_python>`__ 입니다. 여기서 setup.py가 주요 빌드 진입점 역할을 합니다.
 
-`demo_nodes_cpp 패키지 <https://github.com/ros2/demos/tree/{REPOS_FILE_BRANCH}/demo_nodes_cpp>`__ 와 같은 패키지는 ``ament_cmake`` 빌드 유형을 사용하며 CMake를 빌드 도구로 사용합니다.
+`demo_nodes_cpp 패키지 <https://github.com/ros2/demos/tree/humble/demo_nodes_cpp>`__ 와 같은 패키지는 ``ament_cmake`` 빌드 유형을 사용하며 CMake를 빌드 도구로 사용합니다.
 
 편리하게도 패키지 템플릿을 기반으로 새 패키지를 만들기 위한 ``ros2 pkg create`` 도구를 사용할 수 있습니다.
 
@@ -202,7 +202,7 @@ colcon은 여러 빌드 유형을 지원합니다.
 .. code-block:: console
 
     echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
-    echo "export _colcon_cd_root=/opt/ros/{DISTRO}/" >> ~/.bashrc
+    echo "export _colcon_cd_root=/opt/ros/humble/" >> ~/.bashrc
 
 
 
