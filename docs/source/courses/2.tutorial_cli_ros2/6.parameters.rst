@@ -11,7 +11,7 @@
 매개변수를 노드 설정으로 생각할 수 있습니다.
 노드는 정수, 부동 소수점, 부울, 문자열 및 목록과 같은 형식으로 매개변수를 저장할 수 있습니다.
 ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
-매개변수에 대한 자세한 내용은 `개념 문서 <https://docs.ros.org/en/humble/Concepts/Basic/About-Parameters.html>` 를 참조하십시오.
+매개변수에 대한 자세한 내용은 `개념 문서 <https://docs.ros.org/en/humble/Concepts/Basic/About-Parameters.html>`__ 를 참조하십시오.
 
 필수 준비물
 -------------
@@ -113,7 +113,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
     ros2 param set <node_name> <parameter_name> <value>
 
-``/turtlesim``의 배경 색상을 변경해 보겠습니다:
+``/turtlesim`` 의 배경 색상을 변경해 보겠습니다:
 
 .. code-block:: console
 
@@ -123,7 +123,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
 .. code-block:: console
 
-  매개변수 설정 성공
+  Set parameter successfulㄴ
 
 그리고 turtlesim 창의 배경 색상이 변경되어야 합니다:
 
@@ -178,7 +178,7 @@ ROS 2에서 각 노드는 자체 매개변수를 유지합니다.
 
   ros2 param load <node_name> <parameter_file>
 
-``ros2 param dump`` 로 생성된 "turtlesim.yaml" 파일을 ``/turtlesim`` 노드의 매개변수에 로드하려면 다음 명령을 입력하십시오:
+``ros2 param dump`` 로 생성된 ``turtlesim.yaml`` 파일을 ``/turtlesim`` 노드의 매개변수에 로드하려면 다음 명령을 입력하십시오:
 
 .. code-block:: console
 
