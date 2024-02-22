@@ -9,4 +9,5 @@ sphinx-multiversion
 sphinx-rtd-theme
 sphinx-tabs
 sphinxcontrib-images
+sphinxcontrib-video
 # sphinxcontrib-youtube
