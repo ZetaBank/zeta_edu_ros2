@@ -250,12 +250,8 @@ example_nav_to_pose.py
 
 그 결과 아래와 같이 작동할 것이다.
 
-.. raw:: html
+.. image:: images/example_nav_to_pose1.gif
 
-    <video width="320" height="240" controls>
-        <source src="videos/example_nav_to_pose1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
 
 
 
@@ -286,7 +282,7 @@ example_nav_through_poses.py
 
 그 결과 아래와 같이 작동할 것이다.
 
-.. video:: videos/example_nav_through_poses1.mp4
+.. image:: images/example_nav_through_poses1.gif
 
 
 이런 식으로 다양한 샘플 예제 코드를 보고 수정하여 자신의 환경에 맞는 경로 설정을 할 수 있다.
