@@ -250,7 +250,12 @@ example_nav_to_pose.py
 
 그 결과 아래와 같이 작동할 것이다.
 
-.. video:: videos/example_nav_to_pose1.mp4
+.. raw:: html
+
+    <video width="320" height="240" controls>
+        <source src="videos/example_nav_to_pose1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
 
 
