@@ -250,13 +250,14 @@ example_nav_to_pose.py
 
 그 결과 아래와 같이 작동할 것이다.
 
-.. video:: /courses/6.navigation2/videos/example_nav_to_pose.mp4
+.. video:: videos/example_nav_to_pose.mp4
    :width: 500
    :height: 300
 
 
+
 example_nav_through_poses.py
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 먼저 로봇 ``bringup`` 을 완료 한다.
 
@@ -281,7 +282,7 @@ example_nav_through_poses.py
 
 그 결과 아래와 같이 작동할 것이다.
 
-.. video:: /courses/6.navigation2/videos/example_nav_through_poses.mp4
+.. video:: videos/example_nav_through_poses.mp4
    :width: 500
    :height: 300
 
