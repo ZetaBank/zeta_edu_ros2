@@ -63,3 +63,6 @@ numfig = True
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- Video
+video_enforce_extra_source = True
