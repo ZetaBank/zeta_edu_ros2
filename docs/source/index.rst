@@ -137,3 +137,5 @@ In Education Provided by ZetaBank:
     courses/6.navigation2/9.nav2_controllers_mppi
     courses/6.navigation2/10.nav2_controllers_rotation_shim
     courses/6.navigation2/11.nav2_controllers_graceful
+    courses/6.navigation2/12.simple_commander_api
+    courses/6.navigation2/13.nav2_conclusion
