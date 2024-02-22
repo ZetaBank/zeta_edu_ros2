@@ -250,10 +250,9 @@ example_nav_to_pose.py
 
 그 결과 아래와 같이 작동할 것이다.
 
-.. video:: videos/example_nav_to_pose.mp4
-   :width: 500
-   :height: 300
-
+<video width="500" height="300" controls>
+  <source src="videos/example_nav_to_pose.mp4" type="video/mp4">
+</video>
 
 example_nav_through_poses.py
 ^^^^^^^^^^^^^^^^^^^^^^^^
