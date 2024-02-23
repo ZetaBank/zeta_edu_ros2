@@ -64,9 +64,11 @@ In Education Provided by ZetaBank:
 
     courses/1.install_ros2_humble/1.robot_hardware_spec
     courses/1.install_ros2_humble/2.robot_hardware_check
+    courses/1.install_ros2_humble/3.robot_making
     courses/1.install_ros2_humble/1.robot_setup
     courses/1.install_ros2_humble/2.pc_setup
     courses/1.install_ros2_humble/3.install_ros2
+    courses/1.install_ros2_humble/4.robot_assemble_competition
 
 
 .. toctree:: 
@@ -83,6 +85,7 @@ In Education Provided by ZetaBank:
     courses/2.tutorial_cli_ros2/8.rqt_console
     courses/2.tutorial_cli_ros2/9.launching_node
     courses/2.tutorial_cli_ros2/10.recording
+    courses/2.tutorial_cli_ros2/11.robot_hardware_spec_quiz
 
 .. toctree:: 
     :caption: ROS 2 Client libraries Tutorial
@@ -100,6 +103,7 @@ In Education Provided by ZetaBank:
     courses/3.tutorial_client_libraries/10.using_parameters_cpp
     courses/3.tutorial_client_libraries/11.using_parameters_py
     courses/3.tutorial_client_libraries/12.using_ros2doctor
+    courses/3.tutorial_client_libraries/13.personal_package
 
 .. toctree:: 
     :caption: ROS 2 Intermediate
@@ -111,6 +115,7 @@ In Education Provided by ZetaBank:
     courses/4.intermediate_ros2/4.writing_a_py_action
     courses/4.intermediate_ros2/5.launch/0.index
     courses/4.intermediate_ros2/6.tf2/0.index
+    courses/4.intermediate_ros2/7.intermediate_mission
 
 
 
@@ -139,3 +144,5 @@ In Education Provided by ZetaBank:
     courses/6.navigation2/11.nav2_controllers_graceful
     courses/6.navigation2/12.simple_commander_api
     courses/6.navigation2/13.nav2_conclusion
+    courses/6.navigation2/14.parameter_mission
+    courses/6.navigation2/15.navigation_project
