@@ -363,6 +363,6 @@ Windows에서 패키지를 컴파일하고 실행하기 위해 "가시성 제어
 관련 컨텐츠
 ----------------
 
-* C++로 액션 서버 및 클라이언트를 작성하는 다양한 방법이 있습니다. `ros2/examples <https://github.com/ros2/examples/tree/{REPOS_FILE_BRANCH}/rclcpp>`_ 리포지토리의 ``minimal_action_server`` 및 ``minimal_action_client`` 패키지를 확인하십시오.
+* C++로 액션 서버 및 클라이언트를 작성하는 다양한 방법이 있습니다. `ros2/examples <https://github.com/ros2/examples/tree/humble/rclcpp>`_ 리포지토리의 ``minimal_action_server`` 및 ``minimal_action_client`` 패키지를 확인하십시오.
 
 * ROS 2 액션에 대한 자세한 정보는 `ROS 2 공식 문서 <https://docs.ros.org/en/foxy/Tutorials/Actions/Creating-Action-Servers-Clients.html>`_를 참조하십시오.

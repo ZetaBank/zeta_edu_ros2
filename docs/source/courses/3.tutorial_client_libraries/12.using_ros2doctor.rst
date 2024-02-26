@@ -180,7 +180,7 @@ ROS 2에 대한 도움을 얻기 위해 지원 티켓을 열어야 하는 경우
 관련 콘텐츠
 ---------------
 
-`ros2doctor의 README <https://github.com/ros2/ros2cli/tree/{REPOS_FILE_BRANCH}/ros2doctor>`__ 에서 다양한 인수에 대해 자세히 알아볼 수 있습니다.
+`ros2doctor의 README <https://github.com/ros2/ros2cli/tree/humble/ros2doctor>`__ 에서 다양한 인수에 대해 자세히 알아볼 수 있습니다.
 ``ros2doctor`` 리포지토리를 살펴보는 것도 좋습니다. 초보자 친화적이며 기여를 시작하기에 좋은 장소입니다.
 
 다음 단계

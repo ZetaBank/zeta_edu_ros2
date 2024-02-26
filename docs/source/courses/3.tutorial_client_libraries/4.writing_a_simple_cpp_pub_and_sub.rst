@@ -50,7 +50,7 @@
 
       .. code-block:: console
 
-            wget -O publisher_member_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_publisher/member_function.cpp
+            wget -O publisher_member_function.cpp https://raw.githubusercontent.com/ros2/examples/humble/rclcpp/topics/minimal_publisher/member_function.cpp
 
 
 이제 ``publisher_member_function.cpp`` 라는 새 파일이 있어야합니다.
@@ -277,7 +277,7 @@
 
       .. code-block:: console
 
-            wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_subscriber/member_function.cpp
+            wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/humble/rclcpp/topics/minimal_subscriber/member_function.cpp
 
 
 이 파일들이 존재하는지 확인하십시오.
