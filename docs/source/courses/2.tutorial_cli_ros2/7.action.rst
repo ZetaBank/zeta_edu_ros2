@@ -249,7 +249,7 @@ ROS 그래프에 있는 모든 액션을 식별하려면 다음 명령을 실행
 
     ros2 action send_goal <action_name> <action_type> <values>
 
-``<values>``는 YAML 형식이어야 합니다.
+``<values>`` 는 YAML 형식이어야 합니다.
 
 거북이 창을 주의 깊게 관찰하고 다음 명령을 터미널에 입력하세요.
 
