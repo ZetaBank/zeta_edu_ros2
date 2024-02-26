@@ -92,7 +92,7 @@ rosdep가 어떻게 작동하나요?
 좋은 질문이며, 다행히도 물어보셔서 기쁩니다!
 
 * 패키지에서 package.xml에 종속되는 패키지를 ROS 기반인 경우 ROS 생태계 [1]_ 에 릴리스된 경우, 예를 들어 ``nav2_bt_navigator`` 와 같은 경우, 패키지의 이름을 사용할 수 있습니다.
-특정 ROS 배포판에 대한 모든 릴리스된 ROS 패키지 목록을 찾을 수 있습니다. 예를 들어, 주어진 ROS 배포판에 대한 https://github.com/ros/rosdistro/의 ``<distro>/distribution.yaml`` (예: ``humble/distribution.yaml``)에서 확인할 수 있습니다.
+* 특정 ROS 배포판에 대한 모든 릴리스된 ROS 패키지 목록을 찾을 수 있습니다. 예를 들어, 주어진 ROS 배포판에 대한 https://github.com/ros/rosdistro/의 ``<distro>/distribution.yaml`` (예: ``humble/distribution.yaml``)에서 확인할 수 있습니다.
 * 패키지에서 패키지가 아닌 ROS 패키지, 일반적으로 "시스템 종속성"이라고 하는 것에 종속되기를 원하는 경우 특정 라이브러리의 키를 찾아야 합니다. 일반적으로 다음 두 가지 파일이 있습니다:
 
   * `rosdep/base.yaml <https://github.com/ros/rosdistro/blob/master/rosdep/base.yaml>`_: ``apt`` 시스템 종속성
@@ -122,7 +122,7 @@ rosdep가 어떻게 작동하나요?
 즉, 우리의 rosdep 키는 ``doxygen`` 이며, 이는 다른 운영 체제 패키지 관리자에서 다른 이름으로 해석될 것입니다.
 
 만약 내 라이브러리가 rosdistro에 없다면 어떻게 해야 하나요?
-------------------------------------------------------
+--------------------------------------------------------------
 
 ``rosdistro`` 에 라이브러리가 없다면 오픈 소스 소프트웨어 개발의 위대함을 경험할 수 있습니다. 직접 추가할 수 있습니다!
 rosdistro에 대한 풀 리퀘스트는 일반적으로 일주일 이내에 병합됩니다.
