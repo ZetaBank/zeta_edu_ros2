@@ -7,8 +7,8 @@
 ----------
 
 액션은 ROS 2에서의 비동기 통신 형태입니다.
-*액션 클라이언트*는 *액션 서버*에 목표 요청을 보냅니다.
-*액션 서버*는 목표 피드백과 결과를 *액션 클라이언트*에 보냅니다.
+*액션 클라이언트* 는 *액션 서버* 에 목표 요청을 보냅니다.
+*액션 서버* 는 목표 피드백과 결과를 *액션 클라이언트* 에 보냅니다.
 
 필수 사항
 -------------
@@ -243,4 +243,4 @@
 
 * Python으로 액션 서버 및 클라이언트를 작성하는 방법은 다양합니다. `ros2/examples <https://github.com/ros2/examples/tree/humble/rclpy/actions>`_ 저장소의 ``minimal_action_server`` 및 ``minimal_action_client`` 패키지를 확인하십시오.
 
-* ROS 액션에 대한 자세한 정보는 `디자인 문서 <http://design.ros2.org/articles/actions.html>`__를 참조하십시오.
+* ROS 액션에 대한 자세한 정보는 `디자인 문서 <http://design.ros2.org/articles/actions.html>`__ 를 참조하십시오.
