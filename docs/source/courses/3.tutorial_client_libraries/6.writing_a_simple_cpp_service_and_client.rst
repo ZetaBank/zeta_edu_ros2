@@ -34,7 +34,7 @@
 
   ros2 pkg create --build-type ament_cmake --license Apache-2.0 cpp_srvcli --dependencies rclcpp example_interfaces
 
-터미널은 패키지 ``cpp_srvcli``와 필요한 모든 파일 및 폴더를 생성했음을 확인하는 메시지를 반환합니다.
+터미널은 패키지 ``cpp_srvcli`` 와 필요한 모든 파일 및 폴더를 생성했음을 확인하는 메시지를 반환합니다.
 
 ``--dependencies`` 인자는 ``package.xml`` 및 ``CMakeLists.txt`` 에 필요한 종속성 라인을 자동으로 추가합니다.
 ``example_interfaces``는 요청과 응답을 구성하는 `.srv 파일 <https://github.com/ros2/example_interfaces/blob/humble/srv/AddTwoInts.srv>`__ 이 들어 있는 패키지입니다.
@@ -302,7 +302,7 @@
       rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
 
-루트 워크스페이스인 ``ros2_ws``로 돌아가서 새 패키지를 빌드합니다:
+루트 워크스페이스인 ``ros2_ws`` 로 돌아가서 새 패키지를 빌드합니다:
 
 .. tabs::
 
@@ -358,7 +358,7 @@
 ----------
 
 지난 몇 가지 튜토리얼에서는 인터페이스를 활용하여 주제와 서비스 간에 데이터를 전달하는 방법을 학습했습니다.
-다음에는 :doc:`사용자 정의 인터페이스 <./8.create_msg_and_srv>`를 생성하는 방법 을 배우게 될 것입니다.
+다음에는 :doc:`사용자 정의 인터페이스 <./8.create_msg_and_srv>` 를 생성하는 방법 을 배우게 될 것입니다.
 
 관련 콘텐츠
 ---------------

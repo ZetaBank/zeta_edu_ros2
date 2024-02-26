@@ -37,7 +37,7 @@
 터미널에서 패키지 ``py_srvcli`` 가 생성되었음을 확인하는 메시지가 나타납니다.
 
 ``--dependencies`` 인자는 ``package.xml`` 및 ``CMakeLists.txt`` 에 필요한 종속성 라인을 자동으로 추가합니다.
-``example_interfaces``는 요청과 응답을 구성하는 `.srv 파일 <https://github.com/ros2/example_interfaces/blob/humble/srv/AddTwoInts.srv>`__ 이 들어 있는 패키지입니다.
+``example_interfaces`` 는 요청과 응답을 구성하는 `.srv 파일 <https://github.com/ros2/example_interfaces/blob/humble/srv/AddTwoInts.srv>`__ 이 들어 있는 패키지입니다.
 
 .. code-block:: console
 
@@ -281,7 +281,7 @@
 4 빌드 및 실행
 ^^^^^^^^^^^^^^
 
-빌드하기 전에 먼저 작업 공간의 루트인 ``ros2_ws``에서 빈번한 의존성 확인을 위해 ``rosdep``를 실행하는 것이 좋습니다.
+빌드하기 전에 먼저 작업 공간의 루트인 ``ros2_ws`` 에서 빈번한 의존성 확인을 위해 ``rosdep`` 를 실행하는 것이 좋습니다.
 
 .. tabs::
 
@@ -292,7 +292,7 @@
             rosdep install -i --from-path src --rosdistro humble -y
 
 
-작업 공간 루트인 ``ros2_ws``로 이동하고 새 패키지를 빌드합니다.
+작업 공간 루트인 ``ros2_ws`` 로 이동하고 새 패키지를 빌드합니다.
 
 .. code-block:: console
 
