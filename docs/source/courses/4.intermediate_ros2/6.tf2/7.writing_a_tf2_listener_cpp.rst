@@ -13,7 +13,7 @@
 전제 조건
 ----------
 
-이 튜토리얼은 이전의 :doc:`tf2 정적 브로드캐스터 튜토리얼 (C++) <./3.writing_a_tf2_static_broadcaster_cpp>` 및 :doc:`tf2 브로드캐스터 튜토리얼 (C++) <./4.writing_a_tf2_broadcaster_cpp>`을 완료했다고 가정합니다.
+이 튜토리얼은 이전의 :doc:`tf2 정적 브로드캐스터 튜토리얼 (C++) <./3.writing_a_tf2_static_broadcaster_cpp>` 및 :doc:`tf2 브로드캐스터 튜토리얼 (C++) <./4.writing_a_tf2_broadcaster_cpp>` 을 완료했다고 가정합니다.
 이전 튜토리얼에서는 ``learning_tf2_cpp`` 패키지를 생성했으며 여기에서 계속 작업합니다.
 
 작업

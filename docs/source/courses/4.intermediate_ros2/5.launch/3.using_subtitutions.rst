@@ -239,7 +239,7 @@
         default_value='200'
     )
 
-``namespace``가 ``turtlesim_ns`` ``LaunchConfiguration`` 대체 사용법으로 설정된 ``turtlesim_node`` 노드가 정의됩니다.
+``namespace`` 가 ``turtlesim_ns`` ``LaunchConfiguration`` 대체 사용법으로 설정된 ``turtlesim_node`` 노드가 정의됩니다.
 
 .. code-block:: python
 

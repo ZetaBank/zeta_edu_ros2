@@ -28,7 +28,7 @@
 전제 조건
 ----------
 
-이 튜토리얼에서는 :doc:`turtlesim </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 및 :doc:`turtle_tf2_py <../Tf2/Introduction-To-Tf2>` 패키지를 사용합니다.
+이 튜토리얼에서는 :doc:`turtlesim </courses/2.tutorial_cli_ros2/2.turtlesim_rqt>` 및 :doc:`turtle_tf2_py <../6.tf2/0.index>` 패키지를 사용합니다.
 또한 ``ament_python`` 빌드 유형의 ``launch_tutorial`` 이라는 새로운 패키지를 :doc:`만들었다고 가정합니다 </courses/3.tutorial_client_libraries/3.create_package>`.
 
 소개
