@@ -18,7 +18,7 @@
 1 tf2와 시간
 ^^^^^^^^^^^^^^
 
-우리는 :doc:`프레임 추가 튜토리얼 <./9.adding_a_frame_cpp>`에서 끝난 곳으로 돌아갑시다.
+우리는 :doc:`프레임 추가 튜토리얼 <./9.adding_a_frame_cpp>` 에서 끝난 곳으로 돌아갑시다.
 ``learning_tf2_cpp`` 패키지로 이동합니다.
 ``turtle_tf2_listener.cpp`` 파일을 열어 ``lookupTransform()`` 호출을 살펴보세요.
 
