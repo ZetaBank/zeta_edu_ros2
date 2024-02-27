@@ -9,7 +9,7 @@ humble 버전에선 테스트 해보지 못했습니다.
 
 하지만 기본 개념은 익힐 수 있습니다.
 
-Github_에서 소스 코드를 참조하세요.
+Github_ 에서 소스 코드를 참조하세요.
 
 .. _Github: https://github.com/ros-planning/navigation2/tree/main/nav2_graceful_controller
 

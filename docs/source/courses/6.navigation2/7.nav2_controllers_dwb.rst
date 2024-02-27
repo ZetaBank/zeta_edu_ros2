@@ -5,7 +5,7 @@ DWB 컨트롤러
 
 ``zeta2_navigation.launch.py`` 를 실행하면 체험해 볼 수 있습니다.
 
-Github_에서 소스 코드를 확인하세요.
+Github_ 에서 소스 코드를 확인하세요.
 
 .. _Github: https://github.com/ros-planning/navigation2/tree/main/nav2_dwb_controller
 
