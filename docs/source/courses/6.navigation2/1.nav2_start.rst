@@ -43,7 +43,7 @@ Navigation2 Start
 
 ``map`` 은 로봇이 움직이는 환경의 전역 지도를 나타내며, ``odom`` 은 로봇의 상대적인 이동을 추적합니다.
 
-이 ``TF``를 통해 로봇의 운동학적 위치를 전역 지도에 매핑하여 로봇의 위치를 정확하게 추정할 수 있습니다.
+이 ``TF`` 를 통해 로봇의 운동학적 위치를 전역 지도에 매핑하여 로봇의 위치를 정확하게 추정할 수 있습니다.
 
 또한 이 ``TF`` 는 ``SLAM(Simultaneous localization and Mapping)`` 알고리즘이나 ``AMCL(Adaptive Monte Carlo localization)`` 과 같은 로봇의 로컬라이제이션 시스템에 의해 생성됩니다.
 

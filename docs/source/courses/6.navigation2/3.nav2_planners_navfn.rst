@@ -3,7 +3,7 @@ NavFn Planner
 
 ``zeta2_navigation.launch.py`` 의 기본 옵션으로 되어 있습니다.
 
-Github에서 소스 코드 확인하기_.
+Github_ 에서 소스 코드 확인하기.
 
 .. _Github: https://github.com/ros-planning/navigation2/tree/main/nav2_navfn_planner
 
