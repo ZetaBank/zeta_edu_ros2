@@ -3,12 +3,12 @@
 
 /* Change the color of the caption text in the TOC */
 .wy-menu span.caption-text {
-    color: #04589C;
+    color: hsl(128, 71%, 38%);
 }
 
 /* Change the background of the search bar and top navigation */
 .wy-side-nav-search, .wy-nav-top {
-    background: #04589C;
+    background: #9c0425;
 }
 
 /* Remove the icon before the admonition title */
